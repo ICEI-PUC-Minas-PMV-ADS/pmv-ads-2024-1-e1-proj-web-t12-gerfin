@@ -1,12 +1,12 @@
-# Título do Projeto
+# Sistema de Gerenciamento Financeiro 
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas `
 
-`DISCIPLINA`
+`Desenvolvimento de Aplicação Web Front-End`
 
-`SEMESTRE`
+`1 semestre/2024`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O obejetivo geral deste projeto é a aplicação web prática de educação financeira de despesas, fornecendo ferramentas necessárias para o gerenciamento monetário.
 
 ## Integrantes
 
@@ -19,7 +19,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Orientador
 
-* Nome completo do professor
+* Pedro Felipe Alves de Oliveira 
 
 # Documentação
 

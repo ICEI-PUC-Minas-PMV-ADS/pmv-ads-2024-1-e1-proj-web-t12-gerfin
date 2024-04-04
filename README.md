@@ -6,7 +6,7 @@
 
 `1 semestre/2024`
 
-O obejetivo geral deste projeto é a aplicação web prática de educação financeira de despesas, fornecendo ferramentas necessárias para o gerenciamento monetário.
+O objetivo geral deste projeto é a aplicação web prática de educação financeira de despesas, fornecendo ferramentas necessárias para o gerenciamento monetário.
 
 ## Integrantes
 

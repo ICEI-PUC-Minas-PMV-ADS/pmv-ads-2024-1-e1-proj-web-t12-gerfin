@@ -91,13 +91,14 @@ Histórico de entrada/saída
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
 | RNF-01 | A aplicação deve estar acessível em um ambiente público na Internet.                   | Alta  | 
-|RNF- 02|A aplicação deve funcionar em vários tipos de dispositivos diferentes.|Alta|
-|RNF- 02|A aplicação deve fazer o salvamento dos dados em local storage.|Alta|
-|RNF-03 |A aplicação deve fazer o salvamento dos dados em local storage.|Alta|
-|RNF-04 |A aplicação deve ser compatível com os navegadores Chrome, Microsoft Edge e Mozilla Firefox.|Alta|
-|RNF-05  |A aplicação não deve exigir tanto desempenho de processamento.|Alta|
-|RNF-06  |A aplicação deve possuir uma boa acessibilidade. |Média|
-|RNF-07  |A aplicação deve ter a opção de ativar o modo de tela escura.|Baixa|
-|RNF-08  |A aplicação deve ter a opção de fazer o login com Google.|Baixa|
+| RNF- 02|A aplicação deve funcionar em vários tipos de dispositivos diferentes.|Alta|
+| RNF- 02|A aplicação deve fazer o salvamento dos dados em local storage.|Alta|
+| RNF-03 |A aplicação deve fazer o salvamento dos dados em local storage.|Alta|
+| RNF-04 |A aplicação deve ser compatível com os navegadores Chrome, Microsoft Edge e Mozilla Firefox.|Alta|
+| RNF-05 |A aplicação não deve exigir tanto desempenho de processamento.|Alta|
+| RNF-06 |A aplicação deve possuir uma boa acessibilidade. |Média|
+| RNF-07 |A aplicação deve ter a opção de ativar o modo de tela escura.|Baixa|
+| RNF-08 |A aplicação deve ter a opção de fazer o login com Google.|Baixa|
+
 **Prioridade: Alta / Média / Baixa. 
 

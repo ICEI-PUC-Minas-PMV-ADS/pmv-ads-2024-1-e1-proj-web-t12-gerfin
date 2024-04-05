@@ -60,13 +60,6 @@ Histórico de entrada/saída
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |Jovem|Aprender sobre o gerenciamento de finanças|Para melhorar o controle do meu dinheiro|
 | Jovem adulto                | Somar quanto dinheiro vou juntar guardando 50 reais por semana                      | Comprar um produto desejado em uma loja

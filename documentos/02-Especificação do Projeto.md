@@ -61,6 +61,7 @@ Histórico de entrada/saída
 ## Histórias de Usuários
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
+|--------------------|---------------------------|----------------------------------|
 | Jovem              | Aprender sobre o gerenciamento de finanças | Para melhorar o controle do meu dinheiro |
 | Jovem adulto       | Somar quanto dinheiro vou juntar guardando 50 reais por semana | Comprar um produto desejado em uma loja |
 | Jovem adulto       | Somar quanto eu vou ter investido em curto, médio e longo prazo | Saber quanto teria no total ao longo dos anos |

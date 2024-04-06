@@ -74,7 +74,7 @@ Histórico de entrada/saída
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 | A aplicação deve permitir ao usuário cadastrar uma conta.                    | Alta  | 
+| RF- 01 | A aplicação deve permitir ao usuário cadastrar uma conta.                    | Alta  | 
 | RF- 02 | A aplicação deve permitir ao usuário fazer o login da sua conta. | Alta  | 
 | RF- 03 | A aplicação deve permitir que o usuário inserir o valor recebido. | Alta  | 
 | RF- 04 |  A aplicação deve permitir ao usuário inserir valor pago.| Alta  | 

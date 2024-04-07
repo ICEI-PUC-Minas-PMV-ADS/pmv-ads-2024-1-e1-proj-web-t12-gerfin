@@ -5,7 +5,7 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil Jovem </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
@@ -23,7 +23,7 @@ Administração de orçamento
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil Jovem Adulto </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
@@ -42,7 +42,7 @@ Histórico de entrada/saída
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil Autônomo </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>

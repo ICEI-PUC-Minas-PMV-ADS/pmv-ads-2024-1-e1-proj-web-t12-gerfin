@@ -17,13 +17,15 @@ A gestão inadequada do orçamento, influência da cultura do consumo e instabil
 
 ## Objetivos
 
-O objetivo geral é o desenvolvimento de uma aplicação web prática de educação financeira e controle de despesas, visando fornecer aos indivíduos as ferramentas necessárias para enfrentar os desafios financeiros do dia a dia. 						
-    Os objetivos específicos são: 
-O controle de gastos com o usuário podendo inserir os valores recebidos e gastos. 
-Geração de gráficos para o acompanhamento financeiro. 
-Classificação de gastos. 
-Dicas financeiras. 
-Exibir um registro de acompanhamento de metas. 
+O objetivo geral é o desenvolvimento de uma aplicação web prática de educação financeira e controle de despesas, visando fornecer aos indivíduos as ferramentas necessárias para enfrentar os desafios financeiros do dia a dia.
+
+    Os objetivos específicos são:
+    
+- O controle de gastos com o usuário podendo inserir os valores recebidos e gastos. 
+- Geração de gráficos para o acompanhamento financeiro. 
+- Classificação de gastos. 
+- Dicas financeiras. 
+- Exibir um registro de acompanhamento de metas. 
 
 ## Justificativa
 

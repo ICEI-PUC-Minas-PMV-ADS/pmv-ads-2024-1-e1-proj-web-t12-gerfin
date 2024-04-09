@@ -10,7 +10,7 @@ No fluxograma presente na figura 1 está a sequência de interação do usuário
 
 
 ### Tela - Página inicial  
-<p> A página incial é apresentada com o nome do site com o slogan logo abaixo, uma pequena descrição do que o sistema irá oferecer e uma figura que já remete ao tema financeiro. Também estão presentes os botões para fazer login e criar uma conta.  </p>
+<p> A página incial é apresentada com o nome do site (Leevi) com o slogan logo abaixo, uma pequena descrição do que o sistema irá oferecer e uma figura que já remete ao tema financeiro. Também estão presentes os botões para fazer login e criar uma conta.  </p>
 
 <figure>
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/b271ca32-c1ff-4734-91b7-afddacf5c0b0">

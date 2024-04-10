@@ -3,10 +3,13 @@
 
 ## User Flow
 
-No fluxograma presente na figura 1 está a sequência de interação do usuário com as páginas do sistema web. Na sessão de protótipo de baixa fidelidade será abordado cada tela desse sistema de forma mais detalhada.
+No fluxograma presente na figura 1 está a sequência de interação do usuário com as páginas do sistema web. Na sessão de protótipo de alta fidelidade será abordado cada tela desse sistema de forma mais detalhada.
 
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/de6b9548-5574-40b3-bd20-d98c8f496229">
+<figurecaption> Figura 1 - User flow </figurecaption>
+</figure>
 
-## Protótipo de baixa fidelidade
+## Protótipo de alta fidelidade
 
 
 ### Tela - Página inicial  

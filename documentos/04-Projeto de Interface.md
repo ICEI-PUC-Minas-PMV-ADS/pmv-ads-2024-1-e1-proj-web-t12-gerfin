@@ -36,7 +36,8 @@ No fluxograma presente na figura 1 está a sequência de interação do usuário
 <hr>
 
 ### Tela - Página principal
-<p> Na página principal será apresentado ao usuário tudo que ele recebou ou gastou de forma mais geral, juntamente com gráficos apresentando um balancete e um gráfico em forma de pizza com suas classificações de despesas. Nas caixas acima dos gráficos estão presentes os elementos:
+<p> Na página principal será apresentado ao usuário tudo que ele recebou ou gastou de forma mais geral, juntamente com gráficos apresentando um balancete e um gráfico em forma de pizza com suas classificações de despesas. No canto superior direito está presente o nome do usuário, um link para o balanço financeiro, um link para a página de dicas financeiras e o botão para deslogar da conta.
+Nas caixas acima dos gráficos estão presentes os elementos:
 </p>
 <li> Receita: Valor adicionado pelo usuário </li>
 <li> Despesas: Valor gasto pelo usuário</li>
@@ -46,9 +47,47 @@ No fluxograma presente na figura 1 está a sequência de interação do usuário
 <li> Despesas não essenciais: Valor total de despesas gastas classificadas como não essenciais</li>
 <p></p>
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/ded14f12-1caf-4c97-8f3d-1b41a11bd99e">
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/44b8419a-509f-4005-af29-ef066f56011e">
   <figurecaption> Figura 5 - Página principal</figurecaption>
 </figure>
 <hr>
 
+### Tela - Adicionando receita
+<p> Após clicar no botão "adicionar itens" na caixa de receita será exibida as caixas de testo para adicionar o valor recebido, podendo colocar do que se trata o dinheiro e a quantia. </p>
 
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/987f38d1-53ae-438d-af4a-308793fc62d9">
+<figurecaption> Figura 6 - Adicionando receita</figurecaption>
+</figure>
+<hr>
+
+### Tela - Adicionando despesa
+<p> Na caixa de despesa, caso o usuário clique no botão "adicionar itens" será exibida as caixas de texto para adicinar valor de despesa. No momento de adicionar uma despesa poderá ser nomeada, adicionar quantia, classificar como essencial ou não e definir a qual categoria pertence.</p>
+
+<figure><img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a71027d-dca2-485d-b50e-91530742ac7e">
+<figurecaption> Figura 7 - Adicionando despesa </figurecaption>
+</figure>
+<hr>
+
+### Tela - Página de balanço financeiro
+<p> Na tela de balanço é apresentado todos os valores adicionados e gastos pelo usurário, podendo ver o nome, tipo, categoria, a data em que foi adicionado ao sistema, se é essencial ou não, o valor e ações como editar e apagar. Na mesma tela tem uma caixa de pesquisa para procurar um valor específico, botões para adicionar receita ou despesa e no canto inferior direito os botões para trocar a página dos valores. </p>
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/614d7502-3794-4b96-b36b-86fe4570e10a">
+ <figurecaption> Figura 8 - Página de balanço </figurecaption>
+</figure>
+<hr>
+
+### Tela - Página de delete de valor
+<p> Caso o usuário decida apagar um valor irá aparecer uma pequena janela de confirmação com botões para cancelar ou apagar o conteúdo selecionado. </p>
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a3507a9-958e-4b25-a03a-0c4fd7d68a8a">
+ <figurecaption> Figura 9 - Página de delete</figurecaption>
+          </figure>
+<hr>
+
+### Tela - Página com dicas financeiras
+<p> Nesta página são exibidas 15 dicas financeiras para todos os usuários. Nela está presente a logo do site (Leevi), imagens que remetem à economia e uma frase no final. </p>
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/f5c2e46e-84e6-4bff-a837-7891c407caa6">
+<figurecaption> Figura 10 - Página de dicas financeiras </figurecaption>
+</figure>
+<hr>

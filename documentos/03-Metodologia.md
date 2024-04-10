@@ -18,6 +18,8 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 ### Processo
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/bf45191b-a459-4e1e-ab58-fc6c11c400d7)
+
 
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
 - A Fazer: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 

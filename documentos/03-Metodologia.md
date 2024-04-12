@@ -54,11 +54,11 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
+| Repositório de código fonte         | GitHub                             | [git]https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin|
+| Documentos do projeto               | GitHub                             | [doc](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/))|
+| Projeto de Interface                | Figma                              | [figma](https://www.figma.com/file/ueSwanebeBdE9Ftsm7zs3p/GerFin?type=design&node-id=1-231&mode=design&t=XYE1ov7jL9wgWzSX-0)|
+| Gerenciamento do Projeto            | GitHub Projects                    | [trello](https://trello.com/b/V8buWMF3/leevi)|
+| Hospedagem                          | GitHub Pages                       | [pages](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/)|
 
 
 ### Estratégia de Organização de Codificação 

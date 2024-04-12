@@ -34,12 +34,14 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 <ul>
   <li>Bug (Erro no código)</li>
-  <li>Desenvolvimento (Development)</li>
-  <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
+  <li>Desenvolvimento </li>
+  <li>Documentação </li>
+  <li>Gerência de Projetos </li>
+  <li>Infraestrutura </li>
   <li>Testes (Tests)</li>
 </ul>
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/d69409c9-3436-490c-9378-c7bca4cb281e)
 
   
 ### Ferramentas

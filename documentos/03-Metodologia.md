@@ -48,8 +48,6 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
   
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
-
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
@@ -57,7 +55,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de código fonte         | GitHub                             | [git](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin)|
 | Documentos do projeto               | GitHub                             | [doc](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/)|
 | Projeto de Interface                | Figma                              | [figma](https://www.figma.com/file/ueSwanebeBdE9Ftsm7zs3p/GerFin?type=design&node-id=1-231&mode=design&t=XYE1ov7jL9wgWzSX-0)|
-| Gerenciamento do Projeto            | GitHub Projects                    | [trello](https://trello.com/b/V8buWMF3/leevi)|
+| Gerenciamento do Projeto            | Trello                             | [trello](https://trello.com/b/V8buWMF3/leevi)|
 | Hospedagem                          | GitHub Pages                       | [pages](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/)|
 
 

@@ -21,7 +21,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/5e45fe48-bce7-45c6-84d6-091d1bb502b2)
 
-
+Figura 1 - Tela do kanban no Trello utilizada pelo grupo
 
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
 - A Fazer: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
@@ -43,7 +43,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/15c71497-fca8-4b5b-a8f1-8dc500638d6d)
 
-
+Figura 2 - Tela do esquema de cores e categorias
   
 ### Ferramentas
 

@@ -4,7 +4,7 @@
 
 `Desenvolvimento de Aplicação Web Front-End`
 
-`1 semestre/2024`
+`1° semestre/2024`
 
 O objetivo geral deste projeto é a aplicação web prática de educação financeira de despesas, fornecendo ferramentas necessárias para o gerenciamento monetário.
 

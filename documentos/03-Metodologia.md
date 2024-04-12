@@ -41,7 +41,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
   <li>Testes (Tests)</li>
 </ul>
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/d69409c9-3436-490c-9378-c7bca4cb281e)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/165838261/48919b62-70b3-4dbe-bd0f-ca6a8f933e92)
 
   
 ### Ferramentas

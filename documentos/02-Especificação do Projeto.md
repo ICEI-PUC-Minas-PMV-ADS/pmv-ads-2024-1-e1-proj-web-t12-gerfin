@@ -67,6 +67,7 @@ Histórico de entrada/saída
 | Jovem adulto       | Somar quanto eu vou ter investido em curto, médio e longo prazo | Saber quanto teria no total ao longo dos anos |
 | Autônomo           | Administrar quanto ganho e gasto durante um dia de trabalho como motorista de aplicativo| Saber quanto ganharia líquido ao final do dia|
 | Jovem adulto       | Gerenciar os gastos essenciais e lazer durante o mês | Organizar quanto sobra ao final do mês |
+| Jovem adulto       | Eliminar dívidas.| A fim de evitar negativação de crédito |
 
 ## Requisitos do Projeto
 
@@ -77,13 +78,15 @@ Histórico de entrada/saída
 | RF- 01 | A aplicação deve permitir ao usuário cadastrar uma conta.                    | Alta  | 
 | RF- 02 | A aplicação deve permitir ao usuário fazer o login da sua conta. | Alta  | 
 | RF- 03 | A aplicação deve permitir que o usuário inserir o valor recebido. | Alta  | 
-| RF- 04 |  A aplicação deve permitir ao usuário inserir valor pago.| Alta  | 
-| RF- 05 | A aplicação deve permitir ao usuário classificar o tipo de gasto (essencial ou não essencial). | Média | 
-| RF- 06 | A aplicação deve gerar um gráfico de acompanhamento financeiro.| Média | 
-| RF- 07 | A aplicação deve ter dicas de economia. | Média  | 
-| RF- 08 | A aplicação deve exibir um balancete. | Média | 
-| RF- 09 | A aplicação deve permitir ao usuário selecionar as cores dos gráficos. | Baixa | 
-| RF- 10 | A aplicação deve ter um espaço separado para inserir valor que deseja poupar. | Baixa | 
+| RF- 04 | A aplicação deve permitir ao usuário inserir valor pago.| Alta  |
+| RF- 05 | fornecer uma funcionalidade de recuperação de senha que permita aos usuários redefinir suas senhas em caso de esquecimento| Alta|
+| RF- 06 | A aplicação deve permitir o cadastro da renda mensal de todos os componentes de uma família.| Alta|
+| RF- 07 | A aplicação deve permitir ao usuário classificar o tipo de gasto (essencial ou não essencial). | Média | 
+| RF- 08 | A aplicação deve gerar um gráfico de acompanhamento financeiro.| Média | 
+| RF- 09 | A aplicação deve ter dicas de economia. | Média  | 
+| RF- 10 | A aplicação deve exibir um balancete. | Média | 
+| RF- 11 | A aplicação deve permitir ao usuário selecionar as cores dos gráficos. | Baixa | 
+| RF- 12 | A aplicação deve ter um espaço separado para inserir valor que deseja poupar. | Baixa | 
 
 **Prioridade: Alta / Média / Baixa. 
 

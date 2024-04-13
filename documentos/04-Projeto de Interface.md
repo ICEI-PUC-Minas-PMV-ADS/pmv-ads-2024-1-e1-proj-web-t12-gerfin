@@ -5,7 +5,7 @@
 
 No fluxograma presente na figura 1 está a sequência de interação do usuário com as páginas do sistema web. Na sessão de protótipo de alta fidelidade será abordado cada tela desse sistema de forma mais detalhada.
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/8f650046-c5a8-4e4d-ae3c-71f8299f63f5">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/ce23f80c-86be-49c9-8876-f5bbd659e8ca">
 <figurecaption> Figura 1 - User flow </figurecaption>
 </figure>
 
@@ -22,10 +22,10 @@ No fluxograma presente na figura 1 está a sequência de interação do usuário
 <hr>
 
 ### Tela - Página de login
-<p> Na página de login deverá ser colocado o usuário e senha para quem já tenha feito cadastro na plataforma. Logo abaixo das caixas de texto irão se encontrar o botão para logar e o botão para se cadastrar caso não tenha conta. </p>
+<p> Na página de login deverá ser colocado o usuário e senha para quem já tenha feito cadastro na plataforma e também será possível fazer login utilizando a conta do Google. Logo abaixo das caixas de texto irão se encontrar o botão para logar e o botão para se cadastrar caso não tenha conta. </p>
 
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0266c470-9c71-4553-a618-8b4da2345258">
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/a71c2e12-39dd-4f04-b62c-e82bbe3f68ef">
  <figurecaption> Figura 3 - Página de login </figurecaption>
 </figure>
 <hr>
@@ -55,15 +55,15 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 </figure>
 <hr>
 
-### Tela - Adicionando receita
-<p> Após clicar no botão "adicionar itens" na caixa de receita será exibida as caixas de testo para adicionar o valor recebido, podendo colocar do que se trata o dinheiro e a quantia. </p>
+### Pop-up - Adicionando receita
+<p> Após clicar no botão "adicionar itens" na caixa de receita será exibida as caixas de texto para adicionar o valor recebido, podendo colocar do que se trata o dinheiro e a quantia. </p>
 
 <figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/987f38d1-53ae-438d-af4a-308793fc62d9">
 <figurecaption> Figura 6 - Adicionando receita</figurecaption>
 </figure>
 <hr>
 
-### Tela - Adicionando despesa
+### Pop-up - Adicionando despesa
 <p> Na caixa de despesa, caso o usuário clique no botão "adicionar itens" será exibida as caixas de texto para adicinar valor de despesa. No momento de adicionar uma despesa poderá ser nomeada, adicionar quantia, classificar como essencial ou não e definir a qual categoria pertence.</p>
 
 <figure><img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a71027d-dca2-485d-b50e-91530742ac7e">
@@ -79,7 +79,7 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 </figure>
 <hr>
 
-### Tela - Página de delete de valor
+### Pop-up - Página de delete de valor
 <p> Caso o usuário decida apagar um valor irá aparecer uma pequena janela de confirmação com botões para cancelar ou apagar o conteúdo selecionado. </p>
 
 <figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a3507a9-958e-4b25-a03a-0c4fd7d68a8a">
@@ -90,7 +90,7 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 ### Tela - Página com dicas financeiras
 <p> Nesta página são exibidas 15 dicas financeiras para todos os usuários. Nela está presente a logo do site (Leevi), imagens que remetem à economia e uma frase no final. </p>
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/f5c2e46e-84e6-4bff-a837-7891c407caa6">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/ab9f36ec-02b6-4dcd-8f70-8ad3db0632d9">
 <figurecaption> Figura 10 - Página de dicas financeiras </figurecaption>
 </figure>
 <hr>

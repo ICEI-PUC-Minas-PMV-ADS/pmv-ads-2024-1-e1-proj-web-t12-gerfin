@@ -88,9 +88,9 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 <hr>
 
 ### Tela - Pop-ups com dicas financeiras
-<p> Nesta página são exibidas 15 dicas financeiras para todos os usuários. Nela está presente a logo do site (Leevi), imagens que remetem à economia e uma frase no final. </p>
+<p> Durante o uso da aplicação serão exibidos pop-ups de acordo com o fluxo de gastos e ganhos do sistema pelo usuário. Tais pop-ups serão classificados como dicas e cuidados. </p>
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/805e8b59-c75d-43a0-90a6-ec2687a4fbb9">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/aec00edb-d53b-4a7d-903b-676396c08c24">
  <figurecaption> Figura 10 - Pop-ups de dicas financeiras </figurecaption>
 </figure>
 <hr>

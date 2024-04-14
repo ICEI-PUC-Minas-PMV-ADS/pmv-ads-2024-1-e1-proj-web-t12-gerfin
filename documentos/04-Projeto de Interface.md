@@ -87,10 +87,10 @@ Nas caixas acima dos gráficos estão presentes os elementos:
           </figure>
 <hr>
 
-### Tela - Página com dicas financeiras
+### Tela - Pop-ups com dicas financeiras
 <p> Nesta página são exibidas 15 dicas financeiras para todos os usuários. Nela está presente a logo do site (Leevi), imagens que remetem à economia e uma frase no final. </p>
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/ab9f36ec-02b6-4dcd-8f70-8ad3db0632d9">
-<figurecaption> Figura 10 - Página de dicas financeiras </figurecaption>
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/805e8b59-c75d-43a0-90a6-ec2687a4fbb9">
+ <figurecaption> Figura 10 - Pop-ups de dicas financeiras </figurecaption>
 </figure>
 <hr>

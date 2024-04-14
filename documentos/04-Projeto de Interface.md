@@ -5,7 +5,7 @@
 
 No fluxograma presente na figura 1 está a sequência de interação do usuário com as páginas do sistema web. Na sessão de protótipo de alta fidelidade será abordado cada tela desse sistema de forma mais detalhada.
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/ce23f80c-86be-49c9-8876-f5bbd659e8ca">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/5892fa87-8df0-45b7-8268-f0e3eb7f8568">
 <figurecaption> Figura 1 - User flow </figurecaption>
 </figure>
 
@@ -39,7 +39,7 @@ No fluxograma presente na figura 1 está a sequência de interação do usuário
 <hr>
 
 ### Tela - Página principal
-<p> Na página principal será apresentado ao usuário tudo que ele recebou ou gastou de forma mais geral, juntamente com gráficos apresentando um balancete e um gráfico em forma de pizza com suas classificações de despesas. No canto superior direito está presente o nome do usuário, um link para o balanço financeiro, um link para a página de dicas financeiras e o botão para deslogar da conta.
+<p> Na página principal será apresentado ao usuário tudo que ele recebeu ou gastou de forma mais geral durante o mês de escolha (botão ao lado do nome), juntamente com gráficos apresentando um balancete e um gráfico em forma de pizza com suas classificações de despesas. No canto superior direito está presente o nome do usuário, um link para o balanço financeiro, um link para a página de dicas financeiras e o botão para deslogar da conta.
 Nas caixas acima dos gráficos estão presentes os elementos:
 </p>
 <li> Receita: Valor adicionado pelo usuário </li>
@@ -50,7 +50,7 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 <li> Despesas não essenciais: Valor total de despesas gastas classificadas como não essenciais</li>
 <p></p>
 <figure>
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/44b8419a-509f-4005-af29-ef066f56011e">
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/23849261-de7c-43f9-b979-f1610c56fb5d">
   <figurecaption> Figura 5 - Página principal</figurecaption>
 </figure>
 <hr>
@@ -74,7 +74,7 @@ Nas caixas acima dos gráficos estão presentes os elementos:
 ### Tela - Página de balanço financeiro
 <p> Na tela de balanço é apresentado todos os valores adicionados e gastos pelo usurário, podendo ver o nome, tipo, categoria, a data em que foi adicionado ao sistema, se é essencial ou não, o valor e ações como editar e apagar. Na mesma tela tem uma caixa de pesquisa para procurar um valor específico, botões para adicionar receita ou despesa e no canto inferior direito os botões para trocar a página dos valores. </p>
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/614d7502-3794-4b96-b36b-86fe4570e10a">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/1ba13f63-383d-462f-ba84-a74e748815bc">
  <figurecaption> Figura 8 - Página de balanço </figurecaption>
 </figure>
 <hr>

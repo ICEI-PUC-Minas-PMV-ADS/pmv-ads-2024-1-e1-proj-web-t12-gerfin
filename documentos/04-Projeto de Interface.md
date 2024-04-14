@@ -5,7 +5,7 @@
 
 No fluxograma presente na figura 1 está a sequência de interação do usuário com as páginas do sistema web. Na sessão de protótipo de alta fidelidade será abordado cada tela desse sistema de forma mais detalhada.
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/5892fa87-8df0-45b7-8268-f0e3eb7f8568">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/3fa0bff9-10bd-4eb9-8e4d-b608e39711e5">
 <figurecaption> Figura 1 - User flow </figurecaption>
 </figure>
 

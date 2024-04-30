@@ -1,0 +1,248 @@
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --max-width: 1366px;
+
+  --primary-color: #219653;
+  --secundary-color: #EB5757;
+  --background-color-green: #EDFFF5;
+  --background-color-red: #FEDFDF;
+
+  --gray-600: #333333;
+  --gray-300: #828282;
+  --gray-100: #E0E0E0;
+  --gray-0: #F5F5F5;
+
+  --negative: #E60000;
+  --warning: #FFCD07;
+  --sucess: #168821;
+  -- information: #155BCB;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: var(--background-color-green);
+  font-family: var(--font-family);
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1366px;
+  padding: 0 32px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 64px;
+  color: var(--primary-color)
+}
+
+header .nav-mobile {
+  display: none
+}
+
+header .wrapper-nav {
+  display: flex;
+  gap: 20px;
+}
+
+header .wrapper-nav button {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 20px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+header .wrapper-nav button:first-child {
+  border: none;
+  background-color: transparent;
+  color: var(--gray-600)
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0  auto;
+}
+
+section {
+  padding: 50px 32px 20px;
+  display: flex;
+  justify-content: space-between
+}
+
+.left {
+  width: 48%;
+  display: flex;
+  flex-direction: column
+}
+
+.left h1 {
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 40px;
+  z-index: 2
+}
+
+.left h1 span {
+  font-family: "Ingrid Darling", cursive;
+  font-size: 96px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.left p {
+  width: 70%
+}
+
+.left .image {
+  display: none
+}
+
+.left button {
+  margin-top: 60px;
+  padding: 15px 60px;
+  width: fit-content;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.left button span {
+  background: #27AE60;
+  width: 34px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.left button span img {
+  width: 16px;
+  height: 16px;
+}
+
+.left .wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.left .wrapper .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 48%
+}
+
+.left .wrapper .card .icon {
+  background: rgb(39 174 96/ 10%);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px
+}
+
+.right {
+  width: 48%;
+  margin-top: -5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column;
+  }
+  .left h1{
+    font-size: 54px;
+    line-height: 60px
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 20px
+  }
+  .left .image {
+    display: block;
+    margin-top: -140px;
+    margin-bottom: -50px
+  }
+  .left p{
+    width: 100%;
+  }
+  .right {
+    display: none
+  }
+}
+
+@media (max-width: 576px) {
+  header .wrapper-nav button:last-child {
+    display: none
+  }
+  header .wrapper-nav button:first-child {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+  }
+  header h1 {
+    font-size: 42px;
+    color: var(--primary-color)
+  }
+  .left .image {
+    margin-top: -100px;
+    margin-bottom: -30px
+  }
+  .left h1{
+    font-size: 42px;
+    line-height: 60px
+  }
+  .left .wrapper {
+    flex-direction: column;
+    gap:20px;
+  }
+  .left .wrapper .card {
+    width:100%
+  }
+}

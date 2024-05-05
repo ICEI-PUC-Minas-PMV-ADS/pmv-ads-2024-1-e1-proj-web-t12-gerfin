@@ -226,7 +226,7 @@ main {
   margin-bottom: 16px
 }
 .bottom .grafico1 img {
-  height: 75%;
+  height: Calc(100% - 90px);
 }
 .bottom .grafico1 p {
   font-size: 18px;
@@ -244,11 +244,76 @@ main {
 }
 
 .bottom .grafico2 {
+  position: relative;
   width: 34%;
   height: 100%;
-  background-color: var(--background-color-red);
   box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
   border-radius: 5px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom .grafico2 h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-600);
+  margin-bottom: 16px
+}
+.bottom .grafico2 .grafico2-table {
+  width: 100%;
+  color: var(--gray-300);
+  font-weight: 700;
+}
+.bottom .grafico2 .grafico2-table .box-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-300);
+  margin-bottom: 8px;
+}
+.bottom .grafico2 .grafico2-table .box-container .box-title {
+  display: flex;
+  gap: 12px;
+}
+.bottom .grafico2 .grafico2-table .box-container .box {
+  width: 16px;
+  height: 16\px;
+  background: black;
+}
+.box-container #blue {
+  background: #4885E6
+}
+.box-container #dark-blue {
+  background: #16448C
+}
+.box-container #light-green {
+  background: #78E8C1
+}
+.box-container #green {
+  background: #3AD49E
+}
+.box-container #gray {
+  background: #D6D6D6
+}
+.bottom .grafico2 .grafico-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end
+}
+.bottom .grafico2 .grafico-container button {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+.bottom .grafico2 img {
+  height: 10vw;
 }
 
 @media (max-width: 768px) {

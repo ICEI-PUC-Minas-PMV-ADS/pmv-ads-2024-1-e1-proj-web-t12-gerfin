@@ -17,22 +17,10 @@
         <div class="select">
           <p>Mês</p>
           <select name="mes">
-            <option value="Janeiro">Janeiro</option>
-            <option value="Fevereiro">Fevereiro</option>
-            <option value="Março">Março</option>
-            <option value="Abril">Abril</option>
-            <option value="Maio">Maio</option>
-            <option value="Junho">Junho</option>
-            <option value="Julho">Julho</option>
-            <option value="Agosto">Agosto</option>
-            <option value="Setembro">Setembro</option>
-            <option value="Outubro">Outubro</option>
-            <option value="Novembro">Novembro</option>
-            <option value="Dezembro">Dezembro</option>
           </select>
         </div>
   
-        <p>Nick</p>
+        <p class="nick">Nick</p>
         <button onclick="location.href = '../balancete/index.html'">Balanço</button>
         <button class="logout" onclick="location.href = '../inicial/index.html'">
           <img src="../images/logout.svg" alt="">
@@ -49,7 +37,7 @@
             <p>Receita</p>
           </div>
           <div class="card-content">
-            <p>R$5.000,00</p>
+            <p id="receita">R$0,00</p>
             <button>Adicionar receita</button>  
           </div>
         </div>
@@ -58,7 +46,7 @@
             <p>Despesa</p>
           </div>
           <div class="card-content">
-            <p>R$3.000,000</p>
+            <p id="despesa">R$0,000</p>
             <button>Adicionar despesa</button>  
           </div>
         </div>
@@ -67,7 +55,7 @@
             <p>Poupança</p>
           </div>
           <div class="card-content">
-            <p>R$500,00</p>
+            <p id="poupanca">R$ 0,00</p>
             <button>Alterar poupança</button>  
           </div>
         </div>
@@ -76,18 +64,18 @@
             <p>Saldo</p>
           </div>
           <div class="card-content">
-            <p>R$1.500,00</p>
+            <p id="saldo">R$ 0,00</p>
           </div>
         </div>
       </div>
       <div class="top-right">
         <div class="essencial">
           <p>Despesas essenciais</p>
-          <p>R$2.000,00</p>
+          <p id="essencial">R$ 0,00</p>
         </div>
         <div class="notessencial">
           <p>Despesas não essenciais</p>
-          <p>R$1.000,00</p>
+          <p id="notessencial">R$ 0,00</p>
         </div>
       </div>
     </section>
@@ -95,11 +83,55 @@
       <div class="grafico1">
         <h3>Balancete</h3>
         <img src="../images/grafico1.png" alt="gráfico balancete">
-        <p>Saldo atual:   <span> R$1.500,00</span></p>
+        <p>Saldo atual:   <span id="total"> R$ 0,00</span></p>
       </div>
-      <div class="grafico2"></div>
+      <div class="grafico2">
+        <h3>Despesas</h3>
+        <div class="grafico2-table">
+          <div class="box-container">
+            <div class="box-title">
+              <div id="blue" class="box"></div>
+              <p>Casa</p>
+            </div>
+            <p id="casa">0,00%</p>
+          </div>
+          <div class="box-container">
+            <div class="box-title">
+              <div id="dark-blue" class="box"></div>
+              <p>Educação</p>
+            </div>
+            <p id="educacao">0,00%</p>
+          </div>
+          <div class="box-container">
+            <div class="box-title">
+              <div id="light-green" class="box"></div>
+              <p>Alimentação</p>
+            </div>
+            <p id="alimentacao">0,00%</p>
+          </div>
+          <div class="box-container">
+            <div class="box-title">
+              <div id="green" class="box"></div>
+              <p>Saúde</p>
+            </div>
+            <p id="saude">0,00%</p>
+          </div>
+          <div class="box-container">
+            <div class="box-title">
+              <div id="gray" class="box"></div>
+              <p>Lazer e hobbies</p>
+            </div>
+            <p id="lazer">0,00%</p>
+          </div>
+        </div>
+        <div class="grafico-container">
+          <button onclick="location.href = '../balancete/index.html'">Ver detalhes</button>
+          <img src="../images/grafico2.png" alt="Gráfico 2">
+        </div>
+      </div>
     </section>
   </main>
   
+  <script src="script.js"></script>
 </body>
 </html>

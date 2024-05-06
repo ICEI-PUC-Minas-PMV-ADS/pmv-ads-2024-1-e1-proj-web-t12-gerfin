@@ -14,6 +14,7 @@ const saude = document.querySelector('#saude');
 const lazer = document.querySelector('#lazer');
 
 let user = {}
+let month = 0
 
 // ao selecionar mes alterar dados
 mes.addEventListener('change', (event) => {
@@ -78,9 +79,10 @@ fetch('https://my-json-server.typicode.com/ericmartins0203/db-leevi/users')
     console.log('Dados recebidos:', db);
 
     user = db
+    month = db[0].data[db[0].data.length - 1].month
 
     CreateOptions(db)
-    FillData(db)
+    FillData(db, month)
 
   })
   .catch(error => {

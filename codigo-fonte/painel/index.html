@@ -30,6 +30,21 @@
     </div>
   </header>
   <main>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-title aqua">
+          <p>Poupança</p>
+          <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-body">
+          <label for="">Valor a ser poupado</label>
+          <input type="text" id="poupancaNewValue" placeholder="R$ 0,00">
+          <button id="sendValueBtn">Alterar</button>
+        </div>
+
+      </div>
+    </div>
     <section class="top">
       <div class="top-left">
         <div class="card">
@@ -56,7 +71,7 @@
           </div>
           <div class="card-content">
             <p id="poupanca">R$ 0,00</p>
-            <button>Alterar poupança</button>  
+            <button id="openModalPoupanca">Alterar poupança</button>  
           </div>
         </div>
         <div class="card">

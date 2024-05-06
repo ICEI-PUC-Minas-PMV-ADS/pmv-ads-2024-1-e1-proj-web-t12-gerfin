@@ -349,6 +349,9 @@ main {
   min-height: 54px;
   height: 23%
 }
+.modal-title span:hover {
+  color: var(--gray-300)
+}
 .modal-body {
   display: flex;
   flex-direction: column;
@@ -359,16 +362,35 @@ main {
   color: var(--gray-300);
   padding: 32px;
 }
+.modal-body .input {
+  position: relative;
+  width: 100%
+}
+.modal-body .input label {
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  background: #fff;
+  font-size: 12px;
+}
 .modal-body input {
   padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #4FB6B2;
 }
 .modal-body button {
   padding: 16px;
   width: 100%;
   border-radius: 8px;
   border: none;
-  background: var(--gray-100);
-  font-weight: 700
+  background: #4FB6B2;
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+}
+.modal-body button:hover {
+  background: #42a19d;
 }
 
 .aqua {

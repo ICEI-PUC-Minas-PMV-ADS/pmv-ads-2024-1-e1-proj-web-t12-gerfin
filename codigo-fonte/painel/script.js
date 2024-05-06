@@ -17,10 +17,54 @@ let user = {}
 
 // ao selecionar mes alterar dados
 mes.addEventListener('change', (event) => {
-
   FillData(user, event.target.value);
-
 })
+
+//modal poupança
+document.addEventListener("DOMContentLoaded", function() {
+  let modal = document.getElementById("modal");
+  let openModalBtn = document.getElementById("openModalPoupanca");
+  let closeModalBtn = document.getElementsByClassName("close")[0];
+  let sendValueBtn = document.getElementById("sendValueBtn");
+
+  //ao clicar abrir modal
+  openModalBtn.addEventListener("click", function() {
+    modal.style.display = "block";
+  });
+
+  //ao clicar no botão de fechar
+  closeModalBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  sendValueBtn.addEventListener("click", function() {
+    let inputValue = document.getElementById("poupancaNewValue").value;
+    alterarSavings(1, 0, inputValue);
+    FillData(user);
+    modal.style.display = "none";
+  });
+});
+
+// Função para alterar o valor de savings
+function alterarSavings(userId, monthIndex, novoValor) {
+  // Acessar o usuário pelo ID
+  var usuario = user.find(user => user.id === userId);
+  if (usuario) {
+    // Acessar o mês específico pelo índice
+    var mes = usuario.data[monthIndex];
+    if (mes) {
+      // Atualizar o valor de savings
+      mes.savings = novoValor;
+    }
+  }
+}
+
 
 // importando dados
 fetch('https://my-json-server.typicode.com/ericmartins0203/db-leevi/users')
@@ -43,6 +87,8 @@ fetch('https://my-json-server.typicode.com/ericmartins0203/db-leevi/users')
     console.error('Erro:', error);
   });
 
+
+//preenchendo os dados
 function FillData(db, month = null) {
 
   //selecionar usuário
@@ -89,6 +135,7 @@ function FillData(db, month = null) {
   lazer.textContent = ((lazerValue/despesaValue).toFixed(4)*100).toLocaleString('pt-BR', { minimumFractionDigits: 2 }) + '%';
 }
 
+//cria as opções dos meses
 function CreateOptions(db) {
   for (let i = db[0].data.length ; i != 0; i--) {
     const option = document.createElement('option');

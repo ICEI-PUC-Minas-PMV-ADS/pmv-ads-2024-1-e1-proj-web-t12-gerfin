@@ -346,6 +346,7 @@ nav{
 }
 
 @media (max-width:1000px) {
+  body {overflow: auto;}
   .cabecalhoBalanco {width: 450px;}
   nav{width: 450px; margin-left: 32px;}
   nav .filtro select {width: 64px;}

@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leevi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leevi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main><h1>Balancete</h1></main>
-  
+    <header>
+        <div class="container">
+            <h1>Leevi</h1>
+            <div class="wrapper-nav">
+                <div class="select">
+                    <p>Mês</p>
+                    <select name="mes">
+                    </select>
+                </div>
+
+                <p class="nick">Nick</p>
+                <button onclick="location.href = '../balancete/index.html'">Balanço</button>
+                <button class="logout" onclick="location.href = '../inicial/index.html'">
+                    <img src="../images/logout.svg" alt="logout">
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="balanco">
+            <h1>Balanço</h1>
+        </div>
+        <div class="filtro">
+            <p>Filtrar:</p>
+            <select name="mes"></select>
+        </div>
+    </nav>
+    <main>
+        <div class="box">
+            <div class="detalhes">
+                <div class="cabecalhoBalanco">
+                    <h2>Nome</h2>
+                    <h2 class="target">Tipo</h2>
+                    <h2 class="target">Categoria</h2>
+                    <h2 class="target">Data</h2>
+                    <h2 class="target">Essencial</h2>
+                    <h2>Valor</h2>
+                    <h2>Ações</h2>
+                </div>
+                <div class="detalhesGastos">
+                    <div class="conteudo">
+                        <div class="dados">
+                            <div class="dados1">
+                                <p class="nome">Jantar romântico</p>
+                                <p class="tipo">Gasto</p>
+                                <p class="categoria">Lazer</p>
+                                <p class="data">08/03</p>
+                                <p class="essencial">Não</p>
+                                <p class="valor">R$120,00</p>
+                                <div id="edt-dlt">
+                                    <img src="../images/editar.png" alt="Editar">
+                                    <img src="../images/delete.png" alt="Deletar">
+                                </div>
+                            </div>
+
+                            <div class="dados2">
+                                <p class="nome">Salário</p>
+                                <p class="tipo">Receita</p>
+                                <p class="categoria"></p>
+                                <p class="data">09/03</p>
+                                <p class="essencial"></p>
+                                <p class="valor">R$5000,00</p>
+                                <div id="edt-dlt">
+                                    <img src="../images/editar.png" alt="Editar">
+                                    <img src="../images/delete.png" alt="Deletar">
+                                </div>
+                            </div>
+                            <div class="dados3">
+                                <p class="nome">Gasolina</p>
+                                <p class="tipo">Gasto</p>
+                                <p class="categoria">Transporte</p>
+                                <p class="data">10/03</p>
+                                <p class="essencial">Sim</p>
+                                <p class="valor">R$100,00</p>
+                                <div id="edt-dlt">
+                                    <img src="../images/editar.png" alt="Editar">
+                                    <img src="../images/delete.png" alt="Deletar">
+                                </div>
+                            </div>
+                            <div class="dados4">
+                                <p class="nome">Luz</p>
+                                <p class="tipo">Gasto</p>
+                                <p class="categoria">Casa</p>
+                                <p class="data">10/03</p>
+                                <p class="essencial">Sim</p>
+                                <p class="valor">R$200,00</p>
+                                <div id="edt-dlt">
+                                    <img src="../images/editar.png" alt="Editar">
+                                    <img src="../images/delete.png" alt="Deletar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="recDesp">
+                <p>Criar:</p>
+                <button class="gasto">Despesas</button>
+                <button class="receita">Receita</button>
+                <div class="switch">
+                    <p class="paginas">1</p>
+                    <p class="paginas">2</p>
+                    <p class="paginas">3</p>
+                    <p class="paginas">4</p>
+                </div>
+            </div>
+
+        </footer>
+    </main>
+
+
+
 </body>
+
+
 </html>

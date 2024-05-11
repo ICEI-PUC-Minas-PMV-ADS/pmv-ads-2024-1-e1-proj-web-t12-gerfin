@@ -36,7 +36,6 @@
           <p>Editar Poupança</p>
           <span class="close">&times;</span>
         </div>
-
         <div class="modal-body">
           <div class="input">
             <label for="">Valor</label>
@@ -44,9 +43,48 @@
           </div>
           <button id="sendValueBtn">Alterar</button>
         </div>
-
       </div>
     </div>
+
+    <div id="modalR" class="modalR">
+      <div class="modalR-content">
+        <div class="modalR-title green">
+          <p>Adicionar Receita</p>
+          <span class="closeR">&times;</span>
+        </div>
+        <div class="modalR-body">
+          <div class="input">
+            <label for="">Nome</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="">Valor</label>
+            <input type="text" id="receitaNewValue" placeholder="R$ 0,00">
+          </div>
+              <button id="sendValueReceitaBtn">Criar</button>
+            </div>
+          </div>
+        </div>
+     
+        <div id="modalD" class="modalD">
+          <div class="modalD-content">
+            <div class="modalD-title red">
+              <p>Adicionar Despesa</p>
+              <span class="closeD">&times;</span>
+            </div>
+            <div class="modalD-body">
+              <div class="input">
+                <label for="">Nome</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="">Valor</label>
+                <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
+                <label for="">Essencial</label>
+                <input type="text" id="essencial" name="essencial" required><br><br>
+                <label for="">Categoria</label>
+                <input type="text" id="categoria" name="categoria" required><br><br>
+              </div>
+                  <button id="sendValueDespesaBtn">Criar</button>
+                </div>
+              </div>
+            </div>
     <section class="top">
       <div class="top-left">
         <div class="card">
@@ -55,7 +93,7 @@
           </div>
           <div class="card-content">
             <p id="receita">R$0,00</p>
-            <button>Adicionar receita</button>  
+            <button id="openModalReceita">Adicionar receita</button>  
           </div>
         </div>
         <div class="card ">
@@ -64,7 +102,7 @@
           </div>
           <div class="card-content">
             <p id="despesa">R$0,000</p>
-            <button>Adicionar despesa</button>  
+            <button id="openModalDespesa">Adicionar despesa</button>  
           </div>
         </div>
         <div class="card">

@@ -52,6 +52,71 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+//modal receita 
+document.addEventListener("DOMContentLoaded", function() {
+  let modalR = document.getElementById("modalR");
+  let openModalReceitaBtn = document.getElementById("openModalReceita");
+  let closeRModalBtn = document.getElementsByClassName("closeR")[0];
+  let sendValueReceitaBtn = document.getElementById("sendValueReceitaBtn");
+
+  //ao clicar abrir modal
+  openModalReceitaBtn.addEventListener("click", function() {
+    modalR.style.display = "block";
+  });
+
+  //ao clicar no botão de fechar
+  closeRModalBtn.addEventListener("click", function() {
+    modalR.style.display = "none";
+  });
+
+  window.addEventListener("click", function(event) {
+    if (event.target == modalR) {
+      modalR.style.display = "none";       
+    }
+  });
+
+  sendValueReceitaBtn.addEventListener("click", function() {
+    const nome = document.getElementById('nome').value;
+    let inputValue = document.getElementById("receitaNewValue").value;
+    alterarSavings(1, 0, inputValue);
+    FillData(user);
+    modalR.style.display = "none";
+  });
+});
+ 
+//modal despesa
+document.addEventListener("DOMContentLoaded", function() {
+  let modalD = document.getElementById("modalD");
+  let openModalDespesaBtn = document.getElementById("openModalDespesa");
+  let closeDModalBtn = document.getElementsByClassName("closeD")[0];
+  let sendValueDespesaBtn = document.getElementById("sendValueDespesaBtn");
+
+  //ao clicar abrir modal
+  openModalDespesaBtn.addEventListener("click", function() {
+    modalD.style.display = "block";
+  });
+
+  //ao clicar no botão de fechar
+  closeDModalBtn.addEventListener("click", function() {
+    modalD.style.display = "none";
+  });
+
+  window.addEventListener("click", function(event) {
+    if (event.target == modalR) {
+      modalD.style.display = "none";       
+    }
+  });
+
+  sendValueDespesaBtn.addEventListener("click", function() {
+    const nome = document.getElementById('nome').value;
+    let inputValue = document.getElementById("despesaNewValue").value;
+    alterarSavings(1, 0, inputValue);
+    FillData(user);
+    modalD.style.display = "none";
+  });
+});
+
+
 // Função para alterar o valor de savings
 function alterarSavings(userId, monthIndex, novoValor) {
   // Acessar o usuário pelo ID
@@ -146,8 +211,3 @@ function CreateOptions(db) {
     mes.appendChild(option);
   }
 }
-
-
-
-
-

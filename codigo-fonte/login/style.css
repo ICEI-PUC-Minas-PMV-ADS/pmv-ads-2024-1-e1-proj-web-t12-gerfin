@@ -147,7 +147,7 @@ input {
 header h1 {
     font-size: 64px;
     color: var(--primary-color);
-    height: 400px;
+    margin-bottom: 60px;
 }
 
 .wrapper {
@@ -165,7 +165,6 @@ header h1 {
     align-items: center;
     padding: 10px;
     gap: 20px;
-    width: 48%
 }
 
 .wrapper .card .icon {
@@ -182,11 +181,14 @@ header h1 {
     font-size: 14px;
 }
 
-.footer span{
+.footer span {
     text-align: center;
     font-size: 12px;
 }
 
-    .wrapper p{
-        text-align:center
-    }
+.container_title {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 48%;
+}

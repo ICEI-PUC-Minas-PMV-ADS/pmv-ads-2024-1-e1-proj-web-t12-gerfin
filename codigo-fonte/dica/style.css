@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #92d6ae;
+}
+.divpai {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+.divfilho {
+  box-sizing: border-box;
+  width: 29.0%;
+  height: 150px;
+  background-color: white;
+  border: 0px solid white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  border-radius: 5px;
+  
+}
+p {
+  padding-top: 4%;
+  padding-left: 6%;
+  }
+
+strong {
+  color: black;
+  width: f calc(33%);
+  box-sizing: border-box;
+  border: 1px solid #78e8c1;
+  border-radius: 5px;
+  padding: 0% 86% 4% 6%;
+  background-color: #78e8c1;
+}

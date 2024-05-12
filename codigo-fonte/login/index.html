@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leevi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Leevi</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <main><h1>Login</h1></main>
-  
+    <div class="container">
+
+
+        <form method="get" action="">
+            <h2 class="header"><strong>Login</strong></h2>
+            <div class="div-user">
+                <input id="nome" type="text" name="user" autocomplete="off" required>
+                <label for="id-nome">Nome</label>
+            </div>
+            <div class="div-pass">
+                <input id="pass" type="password" name="pass" autocomplete="off" required>
+                <label for="id-pass">Senha</label>
+            </div>
+            <div class="login">
+                <input id="login" type="submit" value="Logar">
+            </div>
+            <div class="footer">
+                <span>Crie sua conta e busque seu controle financeiro!</span>
+            </div>
+            <div class="button_cadastro">
+                <button onclick="location.href = '../cadastro/index.html'"><b>Cadastrar</b></button>
+            </div>
+        </form>
+    </div>
+    <header>
+        <h1>Leevi</h1>
+    </header>
+    <div class="wrapper">
+        <div class="card">
+            <div class="icon">
+                <img src="./icon.png" alt="icon" height="24px" width="24px">
+            </div>
+            <p>Controle suas finanças,<strong>conrole seu futuro.</strong></p>
+        </div>
 </body>
+
 </html>

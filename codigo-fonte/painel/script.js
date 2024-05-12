@@ -76,10 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   sendValueReceitaBtn.addEventListener("click", function() {
-    const nome = document.getElementById('nome').value;
-    let inputValue = document.getElementById("receitaNewValue").value;
-    alterarSavings(1, 0, inputValue);
-    FillData(user);
+    let inputReceita = document.getElementById("receitaNewValue").value;
+    receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
     modalR.style.display = "none";
   });
 });
@@ -116,6 +114,19 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// Função para alterar o valor de savings
+function alterarSavingsR(userId, monthIndex, novoValor) {
+  // Acessar o usuário pelo ID
+  var usuario = user.find(user => user.id === userId);
+  if (usuario) {
+    // Acessar o mês específico pelo índice
+    var mes = usuario.data[monthIndex];
+    if (mes) {
+      mes.savings = novoValor;
+      modalR.style.display = "none";
+    }
+  }
+}
 
 // Função para alterar o valor de savings
 function alterarSavings(userId, monthIndex, novoValor) {

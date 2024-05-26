@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
 <body>
   <header>
@@ -30,7 +32,9 @@
     </div>
   </header>
   <main>
-    <div id="modal" class="modal">
+
+    <!-- modal poupança -->
+    <div id="modalSaving" class="modal">
       <div class="modal-content">
         <div class="modal-title aqua">
           <p>Editar Poupança</p>
@@ -41,11 +45,12 @@
             <label for="">Valor</label>
             <input type="text" id="poupancaNewValue" placeholder="R$ 0,00">
           </div>
-          <button id="sendValueBtn">Alterar</button>
+          <button id="sendSavingsBtn">Alterar</button>
         </div>
       </div>
     </div>
 
+    <!-- modal receita -->
     <div id="modalR" class="modalR">
       <div class="modalR-content">
         <div class="modalR-title green">
@@ -64,27 +69,29 @@
           </div>
         </div>
      
-        <div id="modalD" class="modalD">
-          <div class="modalD-content">
-            <div class="modalD-title red">
-              <p>Adicionar Despesa</p>
-              <span class="closeD">&times;</span>
-            </div>
-            <div class="modalD-body">
-              <div class="input">
-                <label for="">Nome</label>
-                <input type="text" id="nome" name="nome" required><br><br>
-                <label for="">Valor</label>
-                <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
-                <label for="">Essencial</label>
-                <input type="text" id="essencial" name="essencial" required><br><br>
-                <label for="">Categoria</label>
-                <input type="text" id="categoria" name="categoria" required><br><br>
-              </div>
-                  <button id="sendValueDespesaBtn">Criar</button>
-                </div>
-              </div>
-            </div>
+    <!-- modal despesa -->
+    <div id="modalD" class="modalD">
+      <div class="modalD-content">
+        <div class="modalD-title red">
+          <p>Adicionar Despesa</p>
+          <span class="closeD">&times;</span>
+        </div>
+        <div class="modalD-body">
+          <div class="input">
+            <label for="">Nome</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="">Valor</label>
+            <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
+            <label for="">Essencial</label>
+            <input type="text" id="essencial" name="essencial" required><br><br>
+            <label for="">Categoria</label>
+            <input type="text" id="categoria" name="categoria" required><br><br>
+          </div>
+          <button id="sendValueDespesaBtn">Criar</button>
+        </div>
+      </div>
+    </div>
+
     <section class="top">
       <div class="top-left">
         <div class="card">
@@ -126,7 +133,7 @@
       <div class="top-right">
         <div class="essencial">
           <p>Despesas essenciais</p>
-          <p id="essencial">R$ 0,00</p>
+          <p id="labelEssencial">R$ 0,00</p>
         </div>
         <div class="notessencial">
           <p>Despesas não essenciais</p>
@@ -137,7 +144,9 @@
     <section class="bottom">
       <div class="grafico1">
         <h3>Balancete</h3>
-        <img src="../images/grafico1.png" alt="gráfico balancete">
+        <div id="chart-container">
+          <canvas id="line-chart"></canvas>
+        </div>
         <p>Saldo atual:   <span id="total"> R$ 0,00</span></p>
       </div>
       <div class="grafico2">
@@ -145,48 +154,56 @@
         <div class="grafico2-table">
           <div class="box-container">
             <div class="box-title">
-              <div id="blue" class="box"></div>
+              <div id="casabox" class="box"></div>
               <p>Casa</p>
             </div>
             <p id="casa">0,00%</p>
           </div>
           <div class="box-container">
             <div class="box-title">
-              <div id="dark-blue" class="box"></div>
+              <div id="edubox" class="box"></div>
               <p>Educação</p>
             </div>
             <p id="educacao">0,00%</p>
           </div>
           <div class="box-container">
             <div class="box-title">
-              <div id="light-green" class="box"></div>
+              <div id="alibox" class="box"></div>
               <p>Alimentação</p>
             </div>
             <p id="alimentacao">0,00%</p>
           </div>
           <div class="box-container">
             <div class="box-title">
-              <div id="green" class="box"></div>
+              <div id="saubox" class="box"></div>
               <p>Saúde</p>
             </div>
             <p id="saude">0,00%</p>
           </div>
           <div class="box-container">
             <div class="box-title">
-              <div id="gray" class="box"></div>
+              <div id="lazbox" class="box"></div>
               <p>Lazer e hobbies</p>
             </div>
             <p id="lazer">0,00%</p>
           </div>
+          <div class="box-container">
+            <div class="box-title">
+              <div id="poubox" class="box"></div>
+              <p>Poupança</p>
+            </div>
+            <p id="poupancades">0,00%</p>
+          </div>
         </div>
         <div class="grafico-container">
+          <div id="chart-container2">
+            <canvas id="pie-chart"></canvas>
+          </div>
           <button onclick="location.href = '../balancete/index.html'">Ver detalhes</button>
-          <img src="../images/grafico2.png" alt="Gráfico 2">
         </div>
       </div>
     </section>
   </main>
   
-  <script src="script.js"></script>
 </body>
 </html>

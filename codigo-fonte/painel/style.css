@@ -268,51 +268,34 @@ main {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-300);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .bottom .grafico2 .grafico2-table .box-container .box-title {
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 .bottom .grafico2 .grafico2-table .box-container .box {
   width: 16px;
-  height: 16\px;
+  height: 16px;
   background: black;
 }
-.box-container #blue {
-  background: #4885E6
+.box-container #casabox {
+  background: rgba(255, 99, 132, 1)
 }
-.box-container #dark-blue {
-  background: #16448C
+.box-container #edubox {
+  background: rgba(54, 162, 235, 1)
 }
-.box-container #light-green {
-  background: #78E8C1
+.box-container #alibox {
+  background: rgba(255, 206, 86, 1)
 }
-.box-container #green {
-  background: #3AD49E
+.box-container #saubox {
+  background: rgba(75, 192, 192, 1)
 }
-.box-container #gray {
-  background: #D6D6D6
+.box-container #lazbox {
+  background: rgba(153, 102, 255, 1)
 }
-.bottom .grafico2 .grafico-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end
-}
-.bottom .grafico2 .grafico-container button {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  border: none;
-  background-color: var(--primary-color);
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #fff;
-}
-.bottom .grafico2 img {
-  height: 10vw;
+.box-container #poubox {
+  background: rgba(255, 159, 64, 1)
 }
 
 .modal {
@@ -507,6 +490,52 @@ main {
   cursor: pointer;
 }
 
+#chart-container {
+  width: 90%;
+  height: 80%;
+  margin: 0px auto;
+}
+#line-chart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.bottom .grafico2 .grafico-container {
+  height: Calc(100% - 21px - 145px);
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+
+.bottom .grafico2 .grafico-container button {
+  position: absolute;
+  bottom: 6%;
+  left: 8%;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+#chart-container2 {
+  width: auto;
+  height: 75%;
+  min-height: 140px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+
+#pie-chart {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 120px;
+}
+
 @media (max-width: 768px) {
   main {
     height: auto;
@@ -524,7 +553,7 @@ main {
   .bottom {
     width: 100%;
     height: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 40px;
   }
   .bottom .grafico1 {

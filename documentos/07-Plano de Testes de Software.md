@@ -88,11 +88,11 @@ Abaixo estão os cenários de testes selecionados para avaliação do sistema Le
 
 <br>
 
-## Cenário de Teste: Visualizar Receita, Despesa, Poupança e Saldo do mes.
+## Cenário de Teste: Visualizar Receita.
 
-- **Objetivo:** Verificar se a visualização de receita, despesa, poupança e saldo é atualizado corretamente ao adicionar gasto/despesa e editar poupança.
+- **Objetivo:** Verificar se a visualização de receita é atualizado corretamente ao adicionar receita.
 
-- **Descrição:** Testar a funcionalidade de visualizar receita, despesa, poupança e saldo e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês do ano corrente.
+- **Descrição:** Testar a funcionalidade de visualizar receita e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês.
 
 - **Grupo de Usuários:** Usuários registrados.
 
@@ -100,11 +100,59 @@ Abaixo estão os cenários de testes selecionados para avaliação do sistema Le
 
 <br>
 
-## Cenário de Teste: Visualizar Despesa Essenciais e não essenciais.
+## Cenário de Teste: Visualizar Despesa.
 
-- **Objetivo:** Verificar se a visualização de despesa essenciais e não essenciais é atualizado corretamente ao adicionar despesa.
+- **Objetivo:** Verificar se a visualização de despesa é atualizado corretamente ao adicionar despesa.
 
-- **Descrição:** Testar a funcionalidade de visualizar despesa essenciais e não essenciais e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês do ano corrente.
+- **Descrição:** Testar a funcionalidade de visualizar despesas e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês.
+
+- **Grupo de Usuários:** Usuários registrados.
+
+- **Ferramentas Utilizadas:** Navegador web, localStorage.
+
+<br>
+
+## Cenário de Teste: Visualizar  Poupança.
+
+- **Objetivo:** Verificar se a visualização de poupança é atualizado corretamente ao editar poupança.
+
+- **Descrição:** Testar a funcionalidade de visualizar poupança e verificar se as informações são atualizadas em tempo real, exibindo o valor em cada mês.
+
+- **Grupo de Usuários:** Usuários registrados.
+
+- **Ferramentas Utilizadas:** Navegador web, localStorage.
+
+<br>
+
+## Cenário de Teste: Visualizar Saldo.
+
+- **Objetivo:** Verificar se a visualização saldo é atualizado corretamente ao adicionar gasto e despesa e editar poupança.
+
+- **Descrição:** Testar a funcionalidade de visualizar saldo e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês.
+
+- **Grupo de Usuários:** Usuários registrados.
+
+- **Ferramentas Utilizadas:** Navegador web, localStorage.
+
+<br>
+
+## Cenário de Teste: Visualizar Despesa essenciais.
+
+- **Objetivo:** Verificar se a visualização de despesa essenciais é atualizado corretamente ao adicionar despesa.
+
+- **Descrição:** Testar a funcionalidade de visualizar despesa essenciais e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês do ano corrente.
+
+- **Grupo de Usuários:** Usuários registrados.
+
+- **Ferramentas Utilizadas:** Navegador web, localStorage.
+
+<br>
+
+## Cenário de Teste: Visualizar Despesas não essenciais.
+
+- **Objetivo:** Verificar se a visualização de despesa não essenciais é atualizado corretamente ao adicionar despesa não essencial.
+
+- **Descrição:** Testar a funcionalidade de visualizar despesas não essenciais e verificar se as informações são atualizadas em tempo real, exibindo a soma dos valores em cada mês do ano corrente.
 
 - **Grupo de Usuários:** Usuários registrados.
 

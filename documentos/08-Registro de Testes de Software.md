@@ -28,11 +28,7 @@ Através desses registros, podemos analisar detalhadamente cada etapa dos testes
 <br>
 
 **Evidência:**
-<div align="center">
-  <video controls id="newvideo" autostart style="position: absolute; width: 480px;height: 270px; z-index: 2; top: 37px;left: 800px;cursor: pointer;">
-  <source src="./video/login.mp4" type="video/mp4">
-</video>
-</div>
+
 
 <br>
 

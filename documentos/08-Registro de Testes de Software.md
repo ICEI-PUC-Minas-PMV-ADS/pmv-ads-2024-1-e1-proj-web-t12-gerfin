@@ -1,5 +1,43 @@
 # Registro de Testes de Software
 
+Abaixo, você encontrará os registros dos testes realizados no sistema Leevi, juntamente com informações sobre os objetivos, descrições, passos executados, resultados obtidos e evidências. 
+Através desses registros, podemos analisar detalhadamente cada etapa dos testes e compartilhar as evidências de forma clara e interativa.
+
+## Cenário de Teste: Página Inicial - Redirecionamento para a página de Login
+
+**Objetivo:** Verificar se o redirecionamento da página inicial para a página de login está funcionando corretamente.
+
+<br>
+
+**Descrição:** O teste foi realizado para validar se, ao clicar no botão "Login" na página inicial, o usuário é redirecionado corretamente para a página de login do sistema Leevi.
+
+<br>
+
+**Passos do Teste:**
+- Acessar a página inicial do sistema.
+- Localizar o botão "Login" na página inicial.
+- Clicar no botão "Login" para iniciar o redirecionamento.
+- Verificar se o usuário é redirecionado para a página de login do sistema.
+
+<br>
+
+ **Resultados:**
+- No teste realizado, o redirecionamento da página inicial para a página de login funcionou corretamente.
+- Ao clicar no botão "Login", o usuário foi redirecionado para a página de login do sistema.
+
+<br>
+
+**Evidência:**
+<div align="center">
+  <video controls id="newvideo" autostart style="position: absolute; width: 480px;height: 270px; z-index: 2; top: 37px;left: 800px;cursor: pointer;">
+  <source src="./video/login.mp4" type="video/mp4">
+</video>
+</div>
+
+<br>
+
+<!-- # Registro de Testes de Software
+
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
@@ -10,3 +48,4 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | Nome do integrante da equipe |
 
 [Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+ -->

@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leevi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <h1 onclick="redirecionarIni">Leevi</h1>
-            <div class="wrapper-nav">
-                <div class="select">
-                    <p>Mês</p>
-                    <select name="mes">
-                        <option value="Fevereiro">Fevereiro</option>
-                        <option value="Marco">Março</option>
-                    </select>
-                </div>
-
-                <p class="nick">Nick</p>
-                <button onclick="location.href = '../painel/index.html'">Painel</button>
-                <button class="logout" onclick="location.href = '../inicial/index.html'">
-                    <img src="img/logout.svg" alt="logout">
-                </button>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <div class="balanco">
-            <h1>Balanço</h1>
-        </div>
-        <div class="filtro">
-            <p>Filtrar:</p>
-            <select name="mes">
-            </select>
-        </div>
-    </nav>
-    <main>
-    
-        <!-- modal receita -->
-        <div id="modalR" class="modalR">
-            <div class="modalR-content">
-                <div class="modalR-title green">
-                    <p>Adicionar Receita</p>
-                    <span class="closeR">&times;</span>
-                </div>
-                <div class="modalR-body">
-                    <div class="input">
-                        <label for="">Nome</label>
-                        <input type="text" id="nome" name="nome" required><br><br>
-                        <label for="">Valor</label>
-                        <input type="text" id="receitaNewValue" placeholder="R$ 0,00">
-                    </div>
-                    <button id="sendValueReceitaBtn">Criar</button>
-                </div>
-            </div>
-        </div>
-
-        <!--modal despesa-->
-        <div id="modalD" class="modalD">
-            <div class="modalD-content">
-              <div class="modalD-title red">
-                <p>Adicionar Despesa</p>
-                <span class="closeD">&times;</span>
-              </div>
-              <div class="modalD-body">
-                <div class="input">
-                  <label for="">Nome</label>
-                  <input type="text" id="nome" name="nome" required><br><br>
-                  <label for="">Valor</label>
-                  <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
-                  <label for="">Essencial</label>
-                  <input type="text" id="essencial" name="essencial" required><br><br>
-                  <label for="">Categoria</label>
-                  <input type="text" id="categoria" name="categoria" required><br><br>
-                </div>
-                <button id="sendValueDespesaBtn">Criar</button>
-              </div>
-            </div>
+      <div class="container">
+        <h1 onclick="redirecionarIni">Leevi</h1>
+        <div class="wrapper-nav">
+          <div class="select">
+            <p>Mês</p>
+            <select name="mes"></select>
           </div>
 
-       <!--modal editar-->
-       <div id="modalEdt" class="modalEdt">
+          <p class="nick">Nick</p>
+          <button onclick="location.href = '../painel/index.html'">
+            Painel
+          </button>
+          <button
+            class="logout"
+            onclick="location.href = '../inicial/index.html'"
+          >
+            <img src="../images/logout.svg" alt="logout" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="balanco">
+        <h1>Balanço</h1>
+      </div>
+      <div class="filtro">
+        <p>Filtrar:</p>
+        <select name="mes"></select>
+      </div>
+    </nav>
+    <main>
+
+      <!-- modal receita -->
+      <div id="modalR" class="modalR">
+        <div class="modalR-content">
+          <div class="modalR-title green">
+            <p>Adicionar Receita</p>
+            <span class="closeR">&times;</span>
+          </div>
+          <div class="modalR-body">
+            <div class="input">
+              <label for="">Nome</label>
+              <input type="text" id="nomeReceita" name="nome" required />
+              <label for="">Valor</label>
+              <input
+                type="text"
+                id="receitaNewValue"
+                placeholder="R$ 0,00"
+                required
+              />
+            </div>
+            <button id="sendValueReceitaBtn">Criar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal despesa -->
+      <div id="modalD" class="modalD">
+        <div class="modalD-content">
+          <div class="modalD-title red">
+            <p>Adicionar Despesa</p>
+            <span class="closeD">&times;</span>
+          </div>
+          <div class="modalD-body">
+            <div class="input">
+              <label for="">Nome</label>
+              <input type="text" id="nomeDespesa" name="nome" required />
+              <label for="">Essencial</label>
+              <select name="essencial" id="essencialDespesa">
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+              </select>
+              <label for="">Categoria</label>
+              <select name="categoria" id="categoriaDespesa">
+                <option value="Casa">Casa</option>
+                <option value="Educação">Educacão</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Lazer">Lazer e Hobbies</option>
+                <!-- <option value="Transporte">Transporte</option>
+              <option value="Vestuário">Vestuário</option> -->
+              </select>
+              <label for="">Valor</label>
+              <input
+                type="text"
+                id="despesaNewValue"
+                placeholder="R$ 0,00"
+                required
+              />
+            </div>
+            <button id="sendValueDespesaBtn">Criar</button>
+          </div>
+        </div>
+      </div>
+
+      <!--modal editar-->
+      <div id="modalEdt" class="modalEdt">
         <div class="modalEdt-content">
           <div class="modalEdt-title red">
             <p>Editar Valores</p>
@@ -94,106 +115,64 @@
           <div class="modalEdt-body">
             <div class="input">
               <label for="">Nome</label>
-              <input type="text" id="nome" name="nome" required><br><br>
+              <input type="text" id="nome" name="nome" required /><br /><br />
               <label for="">Valor</label>
-              <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
+              <input
+                type="text"
+                id="receitaNewValue"
+                placeholder="R$ 0,00"
+              /><br /><br />
               <label for="">Essencial</label>
-              <input type="text" id="essencial" name="essencial" required><br><br>
+              <input
+                type="text"
+                id="essencial"
+                name="essencial"
+                required
+              /><br /><br />
               <label for="">Categoria</label>
-              <input type="text" id="categoria" name="categoria" required><br><br>
+              <input
+                type="text"
+                id="categoria"
+                name="categoria"
+                required
+              /><br /><br />
             </div>
             <button id="editValueBtn">Confirmar</button>
           </div>
         </div>
       </div>
 
-        <div class="box">
-            <div class="detalhes">
-                <div class="cabecalhoBalanco">
-                    <h2>Nome</h2>
-                    <h2 class="target">Tipo</h2>
-                    <h2 class="target">Categoria</h2>
-                    <h2 class="target">Data</h2>
-                    <h2 class="target">Essencial</h2>
-                    <h2>Valor</h2>
-                    <h2>Ações</h2>
-                </div>
-                <div class="detalhesGastos">
-                    <div class="conteudo">
-                        <div class="dados">
-                            <div class="dados1">
-                                <p class="nome" id="nome1">Jantar romântico</p>
-                                <p class="tipo">Gasto</p>
-                                <p class="categoria">Lazer</p>
-                                <p class="data">08/03</p>
-                                <p class="essencial">Não</p>
-                                <p class="valor">R$120,00</p>
-                                <div id="edt-dlt">
-                                    <img src="images/editar.png" alt="Editar" class="openModalEditar">
-                                    <img src="images/delete.png" alt="Deletar" id="dlt1">
-                                </div>
-                            </div>
-
-                            <div class="dados2">
-                                <p class="nome">Salário</p>
-                                <p class="tipo">Receita</p>
-                                <p class="categoria"></p>
-                                <p class="data">09/03</p>
-                                <p class="essencial"></p>
-                                <p class="valor">R$5000,00</p>
-                                <div id="edt-dlt">
-                                    <img src="images/editar.png" alt="Editar" class="openModalEditar">
-                                    <img src="images/delete.png" alt="Deletar" id="dlt2">
-                                </div>
-                            </div>
-                            <div class="dados3">
-                                <p class="nome">Gasolina</p>
-                                <p class="tipo">Gasto</p>
-                                <p class="categoria">Transporte</p>
-                                <p class="data">10/03</p>
-                                <p class="essencial">Sim</p>
-                                <p class="valor">R$100,00</p>
-                                <div id="edt-dlt">
-                                    <img src="images/editar.png" alt="Editar" class="openModalEditar">
-                                    <img src="images/delete.png" alt="Deletar" id="dlt3">
-                                </div>
-                            </div>
-                            <div class="dados4">
-                                <p class="nome">Luz</p>
-                                <p class="tipo">Gasto</p>
-                                <p class="categoria">Casa</p>
-                                <p class="data">10/03</p>
-                                <p class="essencial">Sim</p>
-                                <p class="valor">R$200,00</p>
-                                <div id="edt-dlt">
-                                    <img src="images/editar.png" alt="Editar" class="openModalEditar" >
-                                    <img src="images/delete.png" alt="Deletar" id="dlt4">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="box">
+        <div class="detalhes">
+          <div class="cabecalhoBalanco">
+            <h2>Nome</h2>
+            <h2 class="target">Tipo</h2>
+            <h2 class="target">Categoria</h2>
+            <h2 class="target">Data</h2>
+            <h2 class="target">Essencial</h2>
+            <h2>Valor</h2>
+            <h2>Deletar</h2>
+          </div>
+          <div class="detalhesGastos">
+            <div class="conteudo">
+              <div id="table" class="dados"></div>
             </div>
+          </div>
         </div>
-        <footer>
-            <div class="recDesp">
-                <p>Criar:</p>
-                <button class="gasto" id="openModalDespesa">Despesas</button>
-                <button class="receita" id="openModalReceita">Receita</button>
-                <div class="switch">
-                    <p class="paginas" id="pg1">1</p>
-                    <p class="paginas" id="pg2">2</p>
-                    <p class="paginas" id="pg3">3</p>
-                    <p class="paginas" id="pg4">4</p>
-                </div>
-            </div>
-
-        </footer>
+      </div>
+      <footer>
+        <div class="recDesp">
+          <p>Criar:</p>
+          <button class="gasto" id="openModalDespesa">Despesas</button>
+          <button class="receita" id="openModalReceita">Receita</button>
+          <div class="switch">
+            <p class="paginas" id="pg1">1</p>
+            <p class="paginas" id="pg2">2</p>
+            <p class="paginas" id="pg3">3</p>
+            <p class="paginas" id="pg4">4</p>
+          </div>
+        </div>
+      </footer>
     </main>
-
-
-
-</body>
-
-
+  </body>
 </html>

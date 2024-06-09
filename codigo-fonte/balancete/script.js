@@ -1,35 +1,226 @@
-const db = localStorage.getItem("db");
+const banco = {
+  users: [
+    {
+      id: 1,
+      name: "Ana",
+      email: "ana@gmail.com",
+      password: "123456",
+      data: [
+        {
+          id: 1,
+          month: "Fevereiro",
+          savings: "0",
+          balance: [
+            {
+              id: 1,
+              name: "Salário",
+              value: "5000,00",
+              type: "income",
+              date: "2022-03-01",
+            },
+            {
+              id: 2,
+              name: "Aluguel",
+              value: "1000,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-02",
+            },
+            {
+              id: 3,
+              name: "Faculdade",
+              value: "500,00",
+              type: "outcome",
+              essential: true,
+              category: "Educação",
+              date: "2022-03-03",
+            },
+            {
+              id: 4,
+              name: "Viagem",
+              value: "1500,99",
+              type: "outcome",
+              essential: false,
+              category: "Lazer",
+              date: "2022-03-04",
+            },
+          ],
+        },
+        {
+          id: 2,
+          month: "Março",
+          savings: "100,00",
+          balance: [
+            {
+              id: 1,
+              name: "Salário",
+              value: "5000,00",
+              type: "income",
+              date: "2022-03-01",
+            },
+            {
+              id: 2,
+              name: "Aluguel",
+              value: "1000,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-01",
+            },
+            {
+              id: 3,
+              name: "Faculdade",
+              value: "500,00",
+              type: "outcome",
+              essential: true,
+              category: "Educação",
+              date: "2022-03-02",
+            },
+            {
+              id: 4,
+              name: "Jantar fora",
+              value: "200,19",
+              type: "outcome",
+              essential: false,
+              category: "Lazer",
+              date: "2022-03-02",
+            },
+            {
+              id: 5,
+              name: "Bônus",
+              value: "1500,00",
+              type: "income",
+              date: "2022-03-04",
+            },
+            {
+              id: 6,
+              name: "Supermercado",
+              value: "300,50",
+              type: "outcome",
+              essential: true,
+              category: "Alimentação",
+              date: "2022-03-05",
+            },
+            {
+              id: 6,
+              name: "Academia",
+              value: "100,00",
+              type: "outcome",
+              essential: true,
+              category: "Saúde",
+              date: "2022-03-06",
+            },
+            {
+              id: 8,
+              name: "Cinema",
+              value: "80,00",
+              type: "outcome",
+              essential: false,
+              category: "Lazer",
+              date: "2022-03-07",
+            },
+            {
+              id: 9,
+              name: "Internet",
+              value: "120,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-08",
+            },
+            {
+              id: 10,
+              name: "Telefone",
+              value: "90,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-09",
+            },
+            {
+              id: 11,
+              name: "Eletricidade",
+              value: "200,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-10",
+            },
+            {
+              id: 12,
+              name: "Água",
+              value: "50,00",
+              type: "outcome",
+              essential: true,
+              category: "Casa",
+              date: "2022-03-11",
+            },
+            {
+              id: 13,
+              name: "Streaming",
+              value: "40,00",
+              type: "outcome",
+              essential: false,
+              category: "Lazer",
+              date: "2022-03-12",
+            },
+            {
+              id: 14,
+              name: "Farmácia",
+              value: "60,00",
+              type: "outcome",
+              essential: true,
+              category: "Saúde",
+              date: "2022-03-13",
+            },
+            {
+              id: 15,
+              name: "Livros",
+              value: "100,00",
+              type: "outcome",
+              essential: false,
+              category: "Educação",
+              date: "2022-03-13",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
 
-const userEmail = JSON.parse(localStorage.getItem("user"));
+const nick = document.querySelector('.nick');
+const mes = document.querySelector('.select select');
 
-const user = db.users.find((user) => user.email === userEmail);
 
-const monthData = user.data[user.data.length - 1];
+let db = localStorage.getItem("db") ? JSON.parse(localStorage.getItem("db")) : banco;
+let userEmail = JSON.parse(localStorage.getItem("user"));
+let userData = db.users.find((user) => user.email === userEmail);
+let monthData = userData.data[userData.data.length - 1];
+let pagina = 1;
+
+nick.textContent = userData.name;
+
+table.innerHTML = createTransactionHTML(monthData.balance);
+
+CreateOptions();
+
+// ao selecionar mes alterar dados
+mes.addEventListener('change', (event) => {
+  monthData = userData.data.find(item => item.month === event.target.value);
+  recriaTabela()
+})
+
+function recriaTabela() {
+  document.querySelectorAll('dados1').forEach(e => e.remove())
+  table.innerHTML = createTransactionHTML(monthData.balance);
+}
 
 //para redirecionar para página inicial
 function redirecionarIni() {
   window.location.href = "'../painel/index.html'";
 }
-
-//para deletar gastos
-var dados1 = document.querySelector(".dados1");
-var dados2 = document.querySelector(".dados2");
-var dados3 = document.querySelector(".dados3");
-var dados4 = document.querySelector(".dados4");
-var dlt1 = document.querySelector("#dlt1");
-
-dlt1.addEventListener("click", function () {
-  dados1.remove();
-});
-dlt2.addEventListener("click", function () {
-  dados2.remove();
-});
-dlt3.addEventListener("click", function () {
-  dados3.remove();
-});
-dlt4.addEventListener("click", function () {
-  dados4.remove();
-});
 
 //modal receita
 document.addEventListener("DOMContentLoaded", function () {
@@ -92,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nome = document.getElementById("nome").value;
     let inputValue = document.getElementById("despesaNewValue").value;
     alterarSavings(1, 0, inputValue);
-    FillData(user);
+    FillData(userData);
     modalD.style.display = "none";
   });
 });
@@ -124,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nome = document.getElementById("nome").value;
     let inputValue = document.getElementById("despesaNewValue").value;
     alterarSavings(1, 0, inputValue);
-    FillData(user);
+    FillData(userData);
     modalEdt.style.display = "none";
   });
 });
@@ -135,39 +326,94 @@ var pagina1 = document.getElementById("pg1");
 var pagina2 = document.getElementById("pg2");
 var pagina3 = document.getElementById("pg3");
 var pagina4 = document.getElementById("pg4");
+
 pagina1.addEventListener("click", () => {
   pagina1.style.fontWeight = "bolder";
   pagina2.style.fontWeight = "lighter";
   pagina3.style.fontWeight = "lighter";
   pagina4.style.fontWeight = "lighter";
+  pagina=1;
+  recriaTabela()
 });
+
 pagina2.addEventListener("click", () => {
   pagina2.style.fontWeight = "bolder";
   pagina1.style.fontWeight = "lighter";
   pagina3.style.fontWeight = "lighter";
   pagina4.style.fontWeight = "lighter";
+  pagina = 2;
+  recriaTabela()
 });
+
 pagina3.addEventListener("click", () => {
   pagina3.style.fontWeight = "bolder";
   pagina1.style.fontWeight = "lighter";
   pagina2.style.fontWeight = "lighter";
   pagina4.style.fontWeight = "lighter";
+  pagina = 3;
+  recriaTabela()
 });
+
 pagina4.addEventListener("click", () => {
   pagina4.style.fontWeight = "bolder";
   pagina1.style.fontWeight = "lighter";
   pagina2.style.fontWeight = "lighter";
   pagina3.style.fontWeight = "lighter";
+  pagina = 4;
+  recriaTabela()
 });
-pagina1.addEventListener("click", function () {
-  dados.style.display = "block";
-});
-pagina2.addEventListener("click", function () {
-  dados.style.display = "none";
-});
-pagina3.addEventListener("click", function () {
-  dados.style.display = "none";
-});
-pagina4.addEventListener("click", function () {
-  dados.style.display = "none";
-});
+
+function createTransactionHTML(transactions) {
+  transactions = transactions.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  if ( pagina == 1) {
+    transactions = transactions.slice(0, 10)
+  } else if ( pagina == 2) {
+    transactions = transactions.slice(10, 20)
+  } else if ( pagina == 3) {
+    transactions = transactions.slice(20, 30)
+  } else if ( pagina == 4) {
+    transactions = transactions.slice(30, 40)
+  }
+
+  console.log(transactions)
+
+
+  return transactions
+    .map((transaction) => {
+      const { name, type, category, date, essential, value } = transaction;
+
+      const tipo = type === "income" ? "Receita" : "Gasto";
+      const essencial = essential ? "Sim" : "Não";
+      const formattedDate = new Date(date).toLocaleDateString("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+      });
+      const formattedValue = `R$${value.replace(".", ",")}`;
+
+      return `
+      <div class="dados1">
+        <p class="nome">${name}</p>
+        <p class="tipo">${tipo}</p>
+        <p class="categoria">${category || ""}</p>
+        <p class="data">${formattedDate}</p>
+        <p class="essencial">${essencial}</p>
+        <p class="valor">${formattedValue}</p>
+        <div id="edt-dlt">
+          
+          <img src="../images/delete.png" alt="Deletar" id="dlt3" />
+        </div>
+      </div>
+    `;
+    })
+    .join("");
+}
+
+function CreateOptions() {
+  for (let i = userData.data.length ; i != 0; i--) {
+    const option = document.createElement('option');
+    option.value = userData.data[i - 1].month;
+    option.textContent = userData.data[i - 1].month;
+    mes.appendChild(option);
+  }
+}

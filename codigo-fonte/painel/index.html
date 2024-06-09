@@ -60,9 +60,9 @@
         <div class="modalR-body">
           <div class="input">
             <label for="">Nome</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <input type="text" id="nomeReceita" name="nome" required>
             <label for="">Valor</label>
-            <input type="text" id="receitaNewValue" placeholder="R$ 0,00">
+            <input type="text" id="receitaNewValue" placeholder="R$ 0,00" required>
           </div>
               <button id="sendValueReceitaBtn">Criar</button>
             </div>
@@ -79,13 +79,24 @@
         <div class="modalD-body">
           <div class="input">
             <label for="">Nome</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="">Valor</label>
-            <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
+            <input type="text" id="nomeDespesa" name="nome" required>
             <label for="">Essencial</label>
-            <input type="text" id="essencial" name="essencial" required><br><br>
+            <select name="essencial" id="essencialDespesa">
+              <option value="true">Sim</option>
+              <option value="false">Não</option>
+            </select>
             <label for="">Categoria</label>
-            <input type="text" id="categoria" name="categoria" required><br><br>
+            <select name="categoria" id="categoriaDespesa">
+              <option value="Casa">Casa</option>
+              <option value="Educação">Educacão</option>
+              <option value="Alimentação">Alimentação</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Lazer">Lazer e Hobbies</option>
+              <!-- <option value="Transporte">Transporte</option>
+              <option value="Vestuário">Vestuário</option> -->
+            </select>
+            <label for="">Valor</label>
+            <input type="text" id="despesaNewValue" placeholder="R$ 0,00" required>
           </div>
           <button id="sendValueDespesaBtn">Criar</button>
         </div>
@@ -137,7 +148,7 @@
         </div>
         <div class="notessencial">
           <p>Despesas não essenciais</p>
-          <p id="notessencial">R$ 0,00</p>
+          <p id="notessencialLabel">R$ 0,00</p>
         </div>
       </div>
     </section>

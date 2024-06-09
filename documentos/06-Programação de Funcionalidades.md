@@ -116,7 +116,7 @@ RF-03	O site deve oferecer uma funcionalidade de inclusão de receita e depesas 
 
 #### Estrutura de Dados
 
-●[paginaLeevi.html]( )
+●[paginaLeevi.html]( https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
 
 
 #### Instruções de acesso
@@ -156,7 +156,7 @@ RF-04	O site deve permitir ao usuário fazer a inclusão dos valores da receita 
 
 #### Estrutura de Dados
 
-●[receita.html]()
+●[receita.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
 
 
 #### Instruções de acesso

@@ -13,7 +13,7 @@ O código utilizado para a construção dos elementos citados, incluindo a respo
 <h3><b>Tela inicial do LEEVI</b></h3>
 <p>Exibe informações de cadrastro e login do usuario.</p>
 <figure>
-<img scr="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/b271ca32-c1ff-4734-91b7-afddacf5c0b0">
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/b271ca32-c1ff-4734-91b7-afddacf5c0b0">
 <figcaption> Figura 1 - Tela de Login
 </figure> 
 

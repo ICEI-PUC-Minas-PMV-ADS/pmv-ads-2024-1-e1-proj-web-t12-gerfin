@@ -60,15 +60,65 @@
         <div class="modalR-body">
           <div class="input">
             <label for="">Nome</label>
-            <input type="text" id="nomeReceita" name="nome" required>
+            <input type="text" id="nome" name="nome" required><br><br>
             <label for="">Valor</label>
-            <input type="text" id="receitaNewValue" placeholder="R$ 0,00" required>
+            <input type="text" id="receitaNewValue" placeholder="R$ 0,00">
           </div>
               <button id="sendValueReceitaBtn">Criar</button>
             </div>
           </div>
         </div>
-     
+     <!-- modal dica -->
+     <div id="fade"></div>
+     <div id="modalOpen">
+         <div id="cabecalho">
+             <h4>Dica</h4>
+             <span id="Fecha">&times;</span>
+         </div>
+         <div id="conteudo">
+          Separe suas despesas em gastos essenciais e não 
+          essenciais, assim você conseguirá reavaliar e reajustar 
+          seus gastos conforme o necessário. </div>
+     </div>
+     <div id="fade2"></div>
+     <div id="modalOpen2">
+      <div id="cabecalho2">
+          <h4>Dica</h4>
+          <span id="Fecha2">&times;</span>
+      </div>
+      <div id="conteudo2">
+        Use e abuse de cupons de descontos e cashbacks na 
+        hora de realizar suas compras, pois mesmo que você 
+        "perca" dinheiro, irá ganhar.
+      </div>
+    </div>
+
+  <div id="fade3"></div>
+  <div id="modalOpen3">
+    <div id="cabecalho3">
+        <h4>Dica</h4>
+        <span id="Fecha3">&times;</span>
+    </div>
+    <div id="conteudo3">
+      Faça sempre um orçamento mensal, assim você consegue 
+      manter o controle dos seus gastos. </div>
+</div>
+
+<div id="fade4"></div>
+<div id="modalOpen4">
+  <div id="cabecalho4">
+      <h4>Dica</h4>
+      <span id="Fecha4">&times;</span>
+  </div>
+  <div id="conteudo4">
+    Reserve parte do seu dinheiro para investir em você, 
+    como por exemplo, na sua educação. </div>
+</div>
+
+
+
+
+
     <!-- modal despesa -->
     <div id="modalD" class="modalD">
       <div class="modalD-content">
@@ -79,24 +129,13 @@
         <div class="modalD-body">
           <div class="input">
             <label for="">Nome</label>
-            <input type="text" id="nomeDespesa" name="nome" required>
-            <label for="">Essencial</label>
-            <select name="essencial" id="essencialDespesa">
-              <option value="true">Sim</option>
-              <option value="false">Não</option>
-            </select>
-            <label for="">Categoria</label>
-            <select name="categoria" id="categoriaDespesa">
-              <option value="Casa">Casa</option>
-              <option value="Educação">Educacão</option>
-              <option value="Alimentação">Alimentação</option>
-              <option value="Saúde">Saúde</option>
-              <option value="Lazer">Lazer e Hobbies</option>
-              <!-- <option value="Transporte">Transporte</option>
-              <option value="Vestuário">Vestuário</option> -->
-            </select>
+            <input type="text" id="nome" name="nome" required><br><br>
             <label for="">Valor</label>
-            <input type="text" id="despesaNewValue" placeholder="R$ 0,00" required>
+            <input type="text" id="receitaNewValue" placeholder="R$ 0,00"><br><br>
+            <label for="">Essencial</label>
+            <input type="text" id="essencial" name="essencial" required><br><br>
+            <label for="">Categoria</label>
+            <input type="text" id="categoria" name="categoria" required><br><br>
           </div>
           <button id="sendValueDespesaBtn">Criar</button>
         </div>
@@ -108,6 +147,7 @@
         <div class="card">
           <div class="card-title">
             <p>Receita</p>
+            <img id="Botao" src="702797 (2).png" width="20%" alt="dica">
           </div>
           <div class="card-content">
             <p id="receita">R$0,00</p>
@@ -117,6 +157,7 @@
         <div class="card ">
           <div class="card-title red">
             <p>Despesa</p>
+            <img id="Botao2" src="702797 (2).png" width="20%" alt="dica">
           </div>
           <div class="card-content">
             <p id="despesa">R$0,000</p>
@@ -126,6 +167,7 @@
         <div class="card">
           <div class="card-title aqua">
             <p>Poupança</p>
+            <img id="Botao3" src="702797 (2).png" width="20%" alt="dica">
           </div>
           <div class="card-content">
             <p id="poupanca">R$ 0,00</p>
@@ -135,6 +177,7 @@
         <div class="card">
           <div class="card-title purple">
             <p>Saldo</p>
+            <img id="Botao4" src="702797 (2).png" width="20%" alt="dica">
           </div>
           <div class="card-content">
             <p id="saldo">R$ 0,00</p>
@@ -148,7 +191,7 @@
         </div>
         <div class="notessencial">
           <p>Despesas não essenciais</p>
-          <p id="notessencialLabel">R$ 0,00</p>
+          <p id="notessencial">R$ 0,00</p>
         </div>
       </div>
     </section>

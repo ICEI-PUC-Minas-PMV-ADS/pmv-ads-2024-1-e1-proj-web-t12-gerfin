@@ -21,7 +21,6 @@
           <select name="mes">
           </select>
         </div>
-  
         <p class="nick">Nick</p>
         <button onclick="location.href = '../balancete/index.html'">Balanço</button>
         <button class="logout" onclick="location.href = '../inicial/index.html'">
@@ -34,18 +33,18 @@
   <main>
 
     <!-- modal poupança -->
-    <div id="modalSaving" class="modal">
-      <div class="modal-content">
-        <div class="modal-title aqua">
+    <div id="modalP" class="modalP">
+      <div class="modalP-content">
+        <div class="modalP-title aqua">
           <p>Editar Poupança</p>
-          <span class="close">&times;</span>
+          <span class="closeP">&times;</span>
         </div>
-        <div class="modal-body">
+        <div class="modalP-body">
           <div class="input">
-            <label for="">Valor</label>
+            <label for="">Valor*</label>
             <input type="text" id="poupancaNewValue" placeholder="R$ 0,00">
           </div>
-          <button id="sendSavingsBtn">Alterar</button>
+          <button id="sendValuePoupancaBtn">Alterar</button>
         </div>
       </div>
     </div>
@@ -59,9 +58,9 @@
         </div>
         <div class="modalR-body">
           <div class="input">
-            <label for="">Nome</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="">Valor</label>
+            <label for="">Nome*</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="">Valor*</label>
             <input type="text" id="receitaNewValue" placeholder="R$ 0,00">
           </div>
               <button id="sendValueReceitaBtn">Criar</button>
@@ -78,20 +77,33 @@
         </div>
         <div class="modalD-body">
           <div class="input">
-            <label for="">Nome</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="">Valor</label>
+            <label for="">Nome*</label>
+            <input type="text" id="nomeD" name="nome" required><br><br>
+            <label for="">Valor*</label>
             <input type="text" id="despesaNewValue" placeholder="R$ 0,00"><br><br>
-            <label for="">Essencial</label>
-            <input type="text" id="essencial" name="essencial" required><br><br>
-            <label for="">Categoria</label>
-            <input type="text" id="categoria" name="categoria" required><br><br>
+            <label for="">Essencial*</label>
+            <select for="" id="essencial">Essencial*
+                <option hidden selected></option>
+                <option>Essencial</option>
+                <option>Não Essencial</option>
+            </select>
+            <br>
+            <label for="">Categoria*</label>
+            <select for="" id="categoria">Categoria*
+              <option hidden selected></option>
+              <option>Casa</option>
+              <option>Educação</option>
+              <option>Alimentação</option>
+              <option>Saúde</option>
+              <option>Lazer e hobbies</option> 
+            </select>
           </div>
           <button id="sendValueDespesaBtn">Criar</button>
         </div>
       </div>
     </div>
 
+    <!-- Criação dos Cards -->
     <section class="top">
       <div class="top-left">
         <div class="card">
@@ -199,11 +211,10 @@
           <div id="chart-container2">
             <canvas id="pie-chart"></canvas>
           </div>
-          <button onclick="location.href = '../balancete/index.html'">Ver detalhes</button>
+          <button onclick="location.href = './index.html'">Ver detalhes</button>
         </div>
       </div>
     </section>
-  </main>
-  
+  </main> 
 </body>
 </html>

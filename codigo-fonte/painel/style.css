@@ -62,9 +62,20 @@ header .wrapper-nav {
   align-items: center;
   gap: 32px;
 }
+
+.modalD .modalD-body .input select {
+  display: flex;
+  padding: 10px 20px;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #EB5757;
+  border-radius: 8px;
+}
+
 header .wrapper-nav .select {
   position: relative
 }
+
 header .wrapper-nav .select p {
   position: absolute;
   font-size: 12px;
@@ -75,12 +86,14 @@ header .wrapper-nav .select p {
   top: -8px;
   left: 10px;
 }
+
 header .wrapper-nav select {
   padding: 10px 20px;
   height: 40px;
   border: 2px solid green;
   border-radius: 5px;
 }
+
 header .wrapper-nav button {
   font-weight: 600;
   font-size: 20px;
@@ -88,6 +101,7 @@ header .wrapper-nav button {
   background-color: transparent;
   color: var(--gray-600)
 }
+
 header .wrapper-nav p {
   font-weight: 600;
   font-size: 20px;
@@ -298,7 +312,7 @@ main {
   background: rgba(255, 159, 64, 1)
 }
 
-.modal {
+.modalP {
   display: none;
   position: fixed;
   z-index: 1;
@@ -334,7 +348,7 @@ main {
 }
 
 
-.modal-content, .modalR-content, .modalD-content{
+.modalP-content, .modalR-content, .modalD-content{
   background-color: #fefefe;
   margin: 15% auto;
   border: 1px solid #888;
@@ -343,7 +357,7 @@ main {
   width: 40%;
   max-width: 448px;
 }
-.modal-title, .modalR-title, .modalD-title {
+.modalP-title, .modalR-title, .modalD-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -356,7 +370,7 @@ main {
   min-height: 54px;
   height: 23%
 }
-.modal-title span:hover {
+.modalP-title span:hover {
   color: var(--gray-300)
 }
 .modalR-title span:hover {
@@ -365,7 +379,7 @@ main {
 .modalD-title span:hover {
   color: var(--gray-300)
 }
-.modal-body, .modalR-body, .modalD-body{
+.modalP-body, .modalR-body, .modalD-body{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,7 +389,7 @@ main {
   color: var(--gray-300);
   padding: 32px;
 }
-.modal-body .input {
+.modalP-body .input {
   position: relative;
   width: 100%
 }
@@ -387,7 +401,7 @@ main {
   position: relative;
   width: 100%
 }
-.modal-body .input label {
+.modalP-body .input label {
   position: absolute;
   top: -9px;
   left: 10px;
@@ -408,7 +422,9 @@ main {
   background: #fff;
   font-size: 12px;
 }
-.modal-body input {
+
+
+.modalP-body input {
   padding: 16px;
   width: 100%;
   border-radius: 8px;
@@ -426,7 +442,7 @@ main {
   border-radius: 8px;
   border: 2px solid #EB5757;
 }
-.modal-body button {
+.modalP-body button {
   padding: 16px;
   width: 100%;
   border-radius: 8px;
@@ -457,7 +473,7 @@ main {
   font-size: 18px;
 }
 
-.modal-body button:hover {
+.modalP-body button:hover {
   background: #42a19d;
 }
 .modalR -body button:hover {
@@ -475,7 +491,7 @@ main {
 .red{
     background-color: #EB5757;
 }
-.close,
+.closeP,
 .closeR,
 .closeD {
   float: right;
@@ -483,8 +499,8 @@ main {
   font-weight: bold;
 }
 
-.close:hover, .closeR:hover, .closeD:hover,
-.close:focus, .closeR:focus, .closeD:focus {
+.closeP:hover, .closeR:hover, .closeD:hover,
+.closeP:focus, .closeR:focus, .closeD:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;

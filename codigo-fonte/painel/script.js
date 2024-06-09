@@ -20,17 +20,17 @@ let myLineChart;
 let myPieChart;
 
 let db = {};
-/* let userEmail = localStorage.getItem('user');
+/*let userEmail = localStorage.getItem('user');
 if (!userEmail) {
   window.location.replace('../login/index.html');
 }
-userEmail = JSON.parse(userEmail); */
+userEmail = JSON.parse(userEmail);
 
 userEmail = 'ana@gmail.com'
 
 let userData = {}
 let month = ''
-let monthData = {} 
+let monthData = {} */
 
 // ao selecionar mes alterar dados
 mes.addEventListener('change', (event) => {
@@ -131,35 +131,43 @@ function CreateOptions() {
   }
 }
 
-
 //modal poupança
 document.addEventListener("DOMContentLoaded", function() {
-  let modal = document.getElementById("modalSaving");
-  let openModalBtn = document.getElementById("openModalPoupanca");
-  let closeModalBtn = document.getElementsByClassName("close")[0];
-  let sendValueBtn = document.getElementById("sendSavingsBtn");
+  let modalP = document.getElementById("modalP");
+  let openModalPoupancaBtn = document.getElementById("openModalPoupanca");
+  let closePModalBtn = document.getElementsByClassName("closeP")[0];
+  let sendValuePoupancaBtn = document.getElementById("sendValuePoupancaBtn");
+  let tratamentoPoupancaNewValue = document.getElementById("poupancaNewValue");
 
   //ao clicar abrir modal
-  openModalBtn.addEventListener("click", function() {
-    modal.style.display = "block";
+  openModalPoupancaBtn.addEventListener("click", function() {
+    modalP.style.display = "block";
+    poupancaNewValue.value = "";
+    tratamentoPoupancaNewValue.focus();
   });
 
   //ao clicar no botão de fechar
-  closeModalBtn.addEventListener("click", function() {
-    modal.style.display = "none";
+  closePModalBtn.addEventListener("click", function() {
+    modalP.style.display = "none";
   });
 
-  window.addEventListener("click", function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+  sendValuePoupancaBtn.addEventListener("click", function() {
+    if (tratamentoPoupancaNewValue.value=="") {
+      alert ("O campo valor da poupança é obrigatório!");
+      tratamentoPoupancaNewValue.focus();
     }
-  });
-
-  sendValueBtn.addEventListener("click", function() {
-    let inputValue = document.getElementById("poupancaNewValue").value;
-    AlterarSavings(inputValue);
-    UpdateAllData(month);
-    modal.style.display = "none";
+    else{
+      let inputReceita = document.getElementById("receitaNewValue").value;
+      let inputDespesa = document.getElementById("despesaNewValue").value;
+      let inputPoupanca = document.getElementById("poupancaNewValue").value;
+      receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      despesa.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      poupanca.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      poupancades.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      saldo.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      total.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      modalP.style.display = "none";
+    }
   });
 });
 
@@ -169,10 +177,15 @@ document.addEventListener("DOMContentLoaded", function() {
   let openModalReceitaBtn = document.getElementById("openModalReceita");
   let closeRModalBtn = document.getElementsByClassName("closeR")[0];
   let sendValueReceitaBtn = document.getElementById("sendValueReceitaBtn");
+  let tratamentoNome = document.getElementById("nome");
+  let tratamentoReceitaNewValue = document.getElementById("receitaNewValue");
 
   //ao clicar abrir modal
   openModalReceitaBtn.addEventListener("click", function() {
     modalR.style.display = "block";
+    nome.value = "";
+    receitaNewValue.value = "";
+    tratamentoNome.focus();
   });
 
   //ao clicar no botão de fechar
@@ -180,16 +193,27 @@ document.addEventListener("DOMContentLoaded", function() {
     modalR.style.display = "none";
   });
 
-  window.addEventListener("click", function(event) {
-    if (event.target == modalR) {
-      modalR.style.display = "none";       
-    }
-  });
-
   sendValueReceitaBtn.addEventListener("click", function() {
-    let inputReceita = document.getElementById("receitaNewValue").value;
-    receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-    modalR.style.display = "none";
+    if (tratamentoNome.value==""){
+      alert ("O campo nome da receita é obrigatório!");
+      tratamentoNome.focus();
+    }
+    else if(tratamentoReceitaNewValue.value==""){
+      alert ("O campo valor da receita é obrigatório!");
+      tratamentoReceitaNewValue.focus();
+    }
+    else{
+      let inputReceita = document.getElementById("receitaNewValue").value;
+      let inputDespesa = document.getElementById("despesaNewValue").value;
+      let inputPoupanca = document.getElementById("poupancaNewValue").value;
+      receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      despesa.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      poupanca.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      poupancades.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      saldo.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      total.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+      modalR.style.display = "none";
+    }
   });
 });
  
@@ -199,10 +223,21 @@ document.addEventListener("DOMContentLoaded", function() {
   let openModalDespesaBtn = document.getElementById("openModalDespesa");
   let closeDModalBtn = document.getElementsByClassName("closeD")[0];
   let sendValueDespesaBtn = document.getElementById("sendValueDespesaBtn");
+  let tratamentoNomeD = document.getElementById("nomeD");
+  let tratamentoDespesaNewValue = document.getElementById("despesaNewValue");
+  let tratamentoEssencial = document.getElementById("essencial");
+  let tratamentoCategoria = document.getElementById("categoria");
+  let tratamentoLabelEssencial = document.getElementById("labelEssencial");
+  let tratamentoLabelNaoEssencial = document.getElementById("notessencial");
 
   //ao clicar abrir modal
   openModalDespesaBtn.addEventListener("click", function() {
     modalD.style.display = "block";
+    nomeD.value = "";
+    despesaNewValue.value = "";
+    tratamentoEssencial.value = "";
+    categoria.value = "";
+    tratamentoNomeD.focus();
   });
 
   //ao clicar no botão de fechar
@@ -210,16 +245,48 @@ document.addEventListener("DOMContentLoaded", function() {
     modalD.style.display = "none";
   });
 
-  window.addEventListener("click", function(event) {
-    if (event.target == modalD) {
-      modalD.style.display = "none";       
-    }
-  });
-
   sendValueDespesaBtn.addEventListener("click", function() {
-    let inputDespesa = document.getElementById("despesaNewValue").value;
-    despesa.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
-    modalD.style.display = "none";
+    if (tratamentoNomeD.value==""){
+      alert ("O campo nome da despesa é obrigatório!");
+      tratamentoNomeD.focus();
+    }
+    else if(tratamentoDespesaNewValue.value==""){
+      alert ("O campo valor da despesa é obrigatório!");
+      tratamentoDespesaNewValue.focus();
+    }
+    else if(tratamentoEssencial.value==""){
+      alert ("Selecione o tipo de despesa!");
+      tratamentoEssencial.focus();
+    }
+    else if(tratamentoCategoria.value==""){
+      alert ("Selecione o tipo de categoria!");
+      tratamentoCategoria.focus();
+    }
+    else{
+      let inputReceita = document.getElementById("receitaNewValue").value;
+      let inputDespesa = document.getElementById("despesaNewValue").value;
+      let inputPoupanca = document.getElementById("poupancaNewValue").value;
+
+      modalD.style.display = "none";
+        if(tratamentoEssencial.value=="Essencial"){
+          receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          despesa.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          poupanca.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          poupancades.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          saldo.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          total.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          tratamentoLabelEssencial.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+        }
+        else{
+          receita.textContent = 'R$ ' + parseFloat(inputReceita).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          despesa.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          poupanca.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          poupancades.textContent = 'R$ ' + parseFloat(inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          saldo.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          total.textContent = 'R$ ' + parseFloat(inputReceita-inputDespesa-inputPoupanca).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+          tratamentoLabelNaoEssencial.textContent = 'R$ ' + parseFloat(inputDespesa).toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+        }
+    }
   });
 });
 

@@ -37,7 +37,9 @@ header .container {
 
 header h1 {
   font-size: 64px;
-  color: #219653
+  color: #219653;
+  cursor: pointer;
+  
 }
 
 header .wrapper-nav {
@@ -264,6 +266,10 @@ nav .filtro select {
   border-color: #219653;
 }
 
+nav .filtro option {
+  font-family:"inter", sans-serif;
+  font-size: 16px;
+}
 nav .filtro p {
   display: block;
   padding: 10px 2px 10px 0;
@@ -330,11 +336,227 @@ footer .recDesp .switch .paginas {
   margin-right:10px ;
   cursor: pointer;
   }
+
+    #pg1 {
+    font-weight: bolder;
+  }
+
   footer .recDesp .switch .paginas:hover {
     background-color: #219653;
   }
 
-@media (max-width:1366px){
+    .modalR {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modalD {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modalEdt {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+    .modalR-content, .modalD-content, .modalEdt-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: auto;
+    border-radius: 5px;
+    width: 40%;
+    max-width: 448px;
+  }
+
+  .modalR-title, .modalD-title, .modalEdt-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    min-height: 54px;
+    height: 23%
+  }
+
+  .modalR-title span:hover {
+    color: #828282;
+  }
+  
+  .modalD-title span:hover {
+    color: #828282;
+  }
+
+  .modalEdt-title span:hover {
+    color: #828282;
+  }
+
+    .modalR-body, .modalD-body, .modalEdt-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    height: 77%;
+    color: #828282;;
+    padding: 32px;
+  }
+
+  .modalR-body .input {
+    position: relative;
+    width: 100%
+  }
+
+  .modalD-body .input {
+    position: relative;
+    width: 100%
+  }
+
+  .modalEdt-body .input {
+    position: relative;
+    width: 100%
+  }
+
+  .modalR-body .input label {
+    position: relative;
+    top: 6px;
+    left: 10px;
+    background: #fff;
+    font-size: 12px;
+  }
+
+  .modalD-body .input label {
+    position: relative;
+    top: 6px;
+    left: 10px;
+    background: #fff;
+    font-size: 12px;
+  }
+
+.modalEdt-body .input label {
+    position: relative;
+    top: 6px;
+    left: 10px;
+    background: #fff;
+    font-size: 12px;
+  }
+
+  .modalR-body input {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #219653;
+  }
+
+  .modalD-body input {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #EB5757;
+  }
+
+  .modalEdt-body input {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #EB5757;
+  }
+
+  .modalR-body button {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #219653;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .modalD-body button {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #EB5757;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .modalEdt-body button {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #EB5757;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .modalR-body button:hover {
+    background: #219653;
+  }
+  .modalD-body button:hover {
+    background: #EB5757;
+  }
+
+  .modalEdt-body button:hover {
+    background: #EB5757;
+  }
+
+  .green {
+    background-color: #219653
+  }
+  .red{
+      background-color: #EB5757;
+  }
+
+  .closeR,
+  .closeD,
+  .closeEdt {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeR:hover, .closeD:hover,
+  .closeR:focus, .closeD:focus,
+  .closeEdt:focus, .closeEdt:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  @media (max-width:1366px){
 nav{
   width: 976px;
 }
@@ -346,11 +568,7 @@ nav{
 }
 
 @media (max-width:1000px) {
-  body {overflow-x: auto;}
-  header {width: 484px;}
-  header .wrapper-nav {gap: 23px;}
- .cabecalhoBalanco {width: 450px;}
- footer .recDesp {width: 245px;}
+  .cabecalhoBalanco {width: 450px;}
   nav{width: 450px; margin-left: 32px;}
   nav .filtro select {width: 64px;}
   .cabecalhoBalanco .target , .tipo , .categoria , .data , .essencial { display: none;}

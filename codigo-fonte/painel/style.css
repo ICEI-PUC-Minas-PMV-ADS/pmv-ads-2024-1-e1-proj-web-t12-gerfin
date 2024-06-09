@@ -16,7 +16,7 @@
   --negative: #E60000;
   --warning: #FFCD07;
   --sucess: #168821;
-  -- information: #155BCB;
+  --information: #155BCB;
 }
 
 * {
@@ -333,17 +333,15 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .modal-content, .modalR-content, .modalD-content{
   background-color: #fefefe;
+  margin: 15% auto;
   border: 1px solid #888;
   width: auto;
   border-radius: 5px;
   width: 40%;
   max-width: 448px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
 }
 .modal-title, .modalR-title, .modalD-title {
   display: flex;
@@ -356,7 +354,7 @@ main {
   border-radius: 5px 5px 0 0;
   width: 100%;
   min-height: 54px;
-  height: 23%;
+  height: 23%
 }
 .modal-title span:hover {
   color: var(--gray-300)
@@ -377,7 +375,7 @@ main {
   color: var(--gray-300);
   padding: 32px;
 }
-.modalD-body .input, .modalD-body select {
+.modal-body .input {
   position: relative;
   width: 100%
 }
@@ -409,7 +407,6 @@ main {
   left: 10px;
   background: #fff;
   font-size: 12px;
-  z-index:10
 }
 .modal-body input {
   padding: 16px;
@@ -423,7 +420,7 @@ main {
   border-radius: 8px;
   border: 2px solid #219653;
 }
-.modalD-body input, .modalD-body select {
+.modalD-body input {
   padding: 16px;
   width: 100%;
   border-radius: 8px;

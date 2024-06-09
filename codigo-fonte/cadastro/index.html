@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Leevi</title>
-</head>
-<body>
-  <main>
-    <div class="left">
-      <h1>Cadastro</h1>
-      <button onclick="location.href = '../login/index.html'">Retornar a página de login</button>
-    <form id="form">
-      <form action="">
-          <label for="nome">
-            <span>Nome</span>
-            <input type="text" id="nome" name="nome" placeholder="Nome" class="input required" oninput="nameValidate()">
-          </label>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Leevi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-          <label for="email">
-            <span>Email</span>
-            <input type="text" id="email" name="email" placeholder="Digite seu email" class="input required" oninput="emailValidate()">
-          </label>
-
-          <label for="senha">
-            <span>Senha</span>
-            <input type="password" id="senha" name="senha" placeholder="Senha" class="input required" oninput="mainPasswordValidate()">
-          </label>
-
-        <label for="confirmarSenha">
-            <span>Confirmar Senha</span>
-            <input type="password" id="confirmar senha" name="confirmar senha" placeholder="Confirme sua Senha" class="input required" oninput="comparePassword()">
-        </label>
-
-        <input type="submit" value="Cadastrar">
-      </form>
-    </form>
-    </div>
-  </div>
-    <div class="right">
-      <h1>Leevi</h1>
-        <div class="imagess">   
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-form">
+          <h2 class="header"><strong>Cadastrar</strong></h2>
+          <form id="registerForm">
+            <div class="input">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name" 
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input
+              id="email"
+              type="email"
+              name="email" 
+              required
+              />
+            </div>
+            <div class="input">
+              <label for="pass">Senha</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="confirmPassword">Confirmar Senha</label>
+              <input
+                id="confirmPassword"
+                type="password"
+                name="confirmPassword"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <p id="message"></p>
+            <button id="cadastro" type="submit">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-title">
+          <h1>Leevi</h1>
           <div class="wrapper">
             <div class="card">
               <div class="icon">
-                <img src="../images/dicacadastro.svg" alt="Icone 1">
+                <img
+                  src="../images/crescimento.svg"
+                  alt="icon"
+                  height="24px"
+                  width="24px"
+                />
               </div>
-            <p>Praticidade e simplicidade a cada passo</p>
-          </div>       
+              <p>
+                Controle suas finanças,<strong>controle seu futuro.</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-  </main>
-</body>
+    </main>
+  </body>
 </html>

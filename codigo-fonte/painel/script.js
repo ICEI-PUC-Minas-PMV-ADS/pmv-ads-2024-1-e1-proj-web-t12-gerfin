@@ -234,6 +234,7 @@ Initialize();
 
 function logout () {
   localStorage.removeItem('user');
+  localStorage.removeItem('db');
   window.location.href = '../inicial/index.html';
 }
 

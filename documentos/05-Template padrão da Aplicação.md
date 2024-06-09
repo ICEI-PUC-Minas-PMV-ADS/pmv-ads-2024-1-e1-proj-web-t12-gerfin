@@ -1,8 +1,18 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout padrão do site foi construído com as linguagens de marcação HTML e CSS, e a linguagem de programação JavaScript foi utilizada para a construção do menu responsivo.
 
-[Apresente a estrutura padrão da sua aplicação.]
+As páginas terão como elementos padrões o menu de navegação, o header e o footer, além dos elementos de identidade visual citados abaixo:
+
+Cores: RGB: #219653, #EB5757, #EDFFF5 e #FEDFDF;
+Font-family: Inter, sans-serif.
+Font-size: 16px e 18px.
+
+O código utilizado para a construção dos elementos citados, incluindo a responsividade, pode ser consultado <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/tree/main/codigo-fonte">aqui</a>. As imagens e ícones utilizados no projeto estão disponíveis <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/tree/main/codigo-fonte/images"> aqui</a>.
+
+
+
+
 
 > **Links Úteis**:
 >

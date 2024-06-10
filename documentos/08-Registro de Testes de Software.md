@@ -8,7 +8,10 @@ Através desses registros, podemos analisar detalhadamente cada etapa dos testes
 |:---|:---|
 | Resultados obtidos | Descrever resultados do teste  |
 | Responsável pela execução do caso de Teste | Vitor |
-
+<figure>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/1323f328-4122-4b1d-80ba-ba14e7d6a10d">
+ 
+</figure>
 
 
 

@@ -197,8 +197,11 @@ const mes = document.querySelector('.select select');
 let db = localStorage.getItem("db") ? JSON.parse(localStorage.getItem("db")) : banco;
 let userEmail = JSON.parse(localStorage.getItem("user"));
 let userData = db.users.find((user) => user.email === userEmail);
+console.log('userData', userData)
 let monthData = userData.data[userData.data.length - 1];
+console.log('monthData', monthData)
 let pagina = 1;
+let editId = null;
 
 nick.textContent = userData.name;
 
@@ -222,71 +225,99 @@ function redirecionarIni() {
   window.location.href = "'../painel/index.html'";
 }
 
-//modal receita
-document.addEventListener("DOMContentLoaded", function () {
+//modal receita 
+document.addEventListener("DOMContentLoaded", function() {
   let modalR = document.getElementById("modalR");
   let openModalReceitaBtn = document.getElementById("openModalReceita");
   let closeRModalBtn = document.getElementsByClassName("closeR")[0];
   let sendValueReceitaBtn = document.getElementById("sendValueReceitaBtn");
 
   //ao clicar abrir modal
-  openModalReceitaBtn.addEventListener("click", function () {
+  openModalReceitaBtn.addEventListener("click", function() {
     modalR.style.display = "block";
   });
 
   //ao clicar no botão de fechar
-  closeRModalBtn.addEventListener("click", function () {
+  closeRModalBtn.addEventListener("click", function() {
     modalR.style.display = "none";
   });
 
-  window.addEventListener("click", function (event) {
+  window.addEventListener("click", function(event) {
     if (event.target == modalR) {
-      modalR.style.display = "none";
+      modalR.style.display = "none";       
     }
   });
 
-  sendValueReceitaBtn.addEventListener("click", function () {
-    let inputReceita = document.getElementById("receitaNewValue").value;
-    receita.textContent =
-      "R$ " +
-      parseFloat(inputReceita).toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-      });
+  sendValueReceitaBtn.addEventListener("click", function() {
+    let inputReceitaNome = document.getElementById("nomeReceita");
+    let inputReceitaValue = document.getElementById("receitaNewValue");
+    CriarReceita(inputReceitaValue.value, inputReceitaNome.value);
+    recriaTabela();
     modalR.style.display = "none";
   });
 });
 
+function CriarReceita(novoValor, name) {
+  monthData.balance.push(
+    { 
+      id: monthData.balance.length + 1,
+      name: name, 
+      value: parseFloat(novoValor).toFixed(2).replace('.', ','), 
+      type: 'income', 
+      date: formatDateToYYYYMMDD(new Date()), 
+    });
+  localStorage.setItem('db', JSON.stringify(db));
+}
+
 //modal despesa
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   let modalD = document.getElementById("modalD");
   let openModalDespesaBtn = document.getElementById("openModalDespesa");
   let closeDModalBtn = document.getElementsByClassName("closeD")[0];
   let sendValueDespesaBtn = document.getElementById("sendValueDespesaBtn");
 
   //ao clicar abrir modal
-  openModalDespesaBtn.addEventListener("click", function () {
+  openModalDespesaBtn.addEventListener("click", function() {
     modalD.style.display = "block";
   });
 
   //ao clicar no botão de fechar
-  closeDModalBtn.addEventListener("click", function () {
+  closeDModalBtn.addEventListener("click", function() {
     modalD.style.display = "none";
   });
 
-  window.addEventListener("click", function (event) {
+  window.addEventListener("click", function(event) {
     if (event.target == modalD) {
-      modalD.style.display = "none";
+      modalD.style.display = "none";       
     }
   });
 
-  sendValueDespesaBtn.addEventListener("click", function () {
-    const nome = document.getElementById("nome").value;
-    let inputValue = document.getElementById("despesaNewValue").value;
-    alterarSavings(1, 0, inputValue);
-    FillData(userData);
+  sendValueDespesaBtn.addEventListener("click", function() {
+    const nome = document.getElementById('nomeDespesa').value;
+    const value = document.getElementById('despesaNewValue').value;
+    const essencial = document.getElementById('essencialDespesa').value;
+    const categoria = document.getElementById('categoriaDespesa').value;
+
+    CriarDespesa(value, nome, categoria, essencial);
     modalD.style.display = "none";
+    recriaTabela();
   });
 });
+
+function CriarDespesa(novoValor, name, category, essential) {
+  monthData.balance.push(
+    { 
+      id: monthData.balance.length + 1,
+      name: name,
+      value: parseFloat(novoValor).toFixed(2).replace('.', ','),
+      type: 'outcome',
+      essential: essential === 'true' ? true : false,
+      category: category,
+      date: formatDateToYYYYMMDD(new Date()), 
+    });
+
+  localStorage.setItem('db', JSON.stringify(db));
+}
 
 //modal editar valores
 document.addEventListener("DOMContentLoaded", function () {
@@ -312,10 +343,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   sendValueEditarBtn.addEventListener("click", function () {
-    const nome = document.getElementById("nome").value;
-    let inputValue = document.getElementById("despesaNewValue").value;
-    alterarSavings(1, 0, inputValue);
-    FillData(userData);
+    const nome = document.getElementById('nomeEdit').value || '';
+    const value = document.getElementById('valueEdit').value || '';
+    const essencial = document.getElementById('essencialEdit').value || '';
+    const categoria = document.getElementById('categoriaEdit').value || '';
+
+    const index = monthData.balance.map(element => element.id === editId).indexOf(true);
+    const item = monthData.balance[index];
+    console.log(item)
+    if ( item.type === 'income') {
+      item.name = nome || item.name;
+      item.value = value || item.value;
+    } else {
+      item.name = nome || item.name;
+      item.value = value || item.value;
+      item.essential = essencial === 'true' ? true : false;
+      item.category = categoria || item.category;
+    }
+    console.log(item)
+    recriaTabela();
+    localStorage.setItem('db', JSON.stringify(db));
     modalEdt.style.display = "none";
   });
 });
@@ -376,8 +423,6 @@ function createTransactionHTML(transactions) {
     transactions = transactions.slice(30, 40)
   }
 
-  console.log(transactions)
-
 
   return transactions
     .map((transaction) => {
@@ -400,8 +445,8 @@ function createTransactionHTML(transactions) {
         <p class="essencial">${essencial}</p>
         <p class="valor">${formattedValue}</p>
         <div id="edt-dlt">
-          
-          <img src="../images/delete.png" alt="Deletar" id="dlt3" />
+          <img src="../images/editar.png" alt="Editar" onClick="editItem(${transaction.id})" />
+          <img src="../images/delete.png" alt="Deletar" id="dlt3" onclick="deleteItem(${transaction.id})" />
         </div>
       </div>
     `;
@@ -417,3 +462,33 @@ function CreateOptions() {
     mes.appendChild(option);
   }
 }
+
+function formatDateToYYYYMMDD(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  
+  return `${year}-${month}-${day}`;
+}
+
+function editItem(id) {
+  editId = id;
+  modalEdt.style.display = "block";
+}
+
+function deleteItem(id) {
+  const index = monthData.balance.map(element => element.id === id).indexOf(true);
+  monthData.balance.splice(index, 1);
+  recriaTabela();
+  console.log(monthData.balance)
+  localStorage.setItem('db', JSON.stringify(db));
+}
+
+document.getElementById('filtro').addEventListener('change', function() {
+  let filtro = this.value;
+  if (filtro !== '') {
+    table.innerHTML = createTransactionHTML(monthData.balance.filter(item => item.type === filtro));
+  }else {
+    table.innerHTML = createTransactionHTML(monthData.balance);
+  }
+});

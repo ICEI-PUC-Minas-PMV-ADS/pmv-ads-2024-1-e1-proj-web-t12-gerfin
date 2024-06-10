@@ -107,7 +107,7 @@ main .box {
   display: block;
   justify-content: space-between;
   padding-bottom: 16px;
-  min-height: 60vh
+  min-height: 70vh
 }
 
 .detalhes .cabecalhoBalanco {
@@ -378,7 +378,7 @@ footer .recDesp .switch .paginas:hover {
   width: 100%;
 }
 
-.modalEdt-body .input {
+.modalEdt-body .input, .modalEdt-body select {
   position: relative;
   width: 100%;
 }
@@ -406,6 +406,7 @@ footer .recDesp .switch .paginas:hover {
   left: 10px;
   background: #fff;
   font-size: 12px;
+  z-index:10
 }
 
 .modalR-body input {
@@ -422,7 +423,7 @@ footer .recDesp .switch .paginas:hover {
   border: 2px solid #eb5757;
 }
 
-.modalEdt-body input {
+.modalEdt-body input, .modalEdt-body select {
   padding: 16px;
   width: 100%;
   border-radius: 8px;

@@ -3,31 +3,13 @@
 Abaixo, você encontrará os registros dos testes realizados no sistema Leevi, juntamente com informações sobre os objetivos, descrições, passos executados, resultados obtidos e evidências. 
 Através desses registros, podemos analisar detalhadamente cada etapa dos testes e compartilhar as evidências de forma clara e interativa.
 
-## Cenário de Teste: Página Inicial - Redirecionamento para a página de Login
 
-**Objetivo:** Verificar se o redirecionamento da página inicial para a página de login está funcionando corretamente.
+|Caso de Teste    | CT-01 - Página Inicial - Redirecionamento para a página de Login |
+|:---|:---|
+| Resultados obtidos | Descrever resultados do teste  |
+| Responsável pela execução do caso de Teste | Vitor |
 
-<br>
 
-**Descrição:** O teste foi realizado para validar se, ao clicar no botão "Login" na página inicial, o usuário é redirecionado corretamente para a página de login do sistema Leevi.
-
-<br>
-
-**Passos do Teste:**
-- Acessar a página inicial do sistema.
-- Localizar o botão "Login" na página inicial.
-- Clicar no botão "Login" para iniciar o redirecionamento.
-- Verificar se o usuário é redirecionado para a página de login do sistema.
-
-<br>
-
- **Resultados:**
-- No teste realizado, o redirecionamento da página inicial para a página de login funcionou corretamente.
-- Ao clicar no botão "Login", o usuário foi redirecionado para a página de login do sistema.
-
-<br>
-
-**Evidência:**
 
 
 <br>

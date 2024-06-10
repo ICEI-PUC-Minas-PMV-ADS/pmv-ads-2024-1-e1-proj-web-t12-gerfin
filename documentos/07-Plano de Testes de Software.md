@@ -103,12 +103,13 @@ Abaixo estão os cenários de testes selecionados para avaliação do sistema Le
 
 <hr>
 
-|Caso de Teste    | CT-11 - Verificar redirecionamento para tela de balanço|
+|Caso de Teste      | CT-11 - Verificar redirecionamento para tela de balanço|
 |:---|:---|
-| Requisitos Associados | RF-10 A aplicação deve exibir um balancete.  |
-| Objetivo do Teste | Verificar se o usuário consegue ir para a tela de balancete.|
-| Passos | 1. Clicar em "Ver detalhes" ou "Balanço" <br> 2. Verificar a página que aparece. |
-| Critérios de êxito | O usuário ser redirecionado para tela de balancete. | Vitor |
+| Requisitos Associados   | RF-10 A aplicação deve exibir um balancete.  |
+| Objetivo do Teste   | Verificar se o usuário consegue ir para a tela de balancete.|
+| Passos   | 1. Clicar em "Ver detalhes" ou "Balanço" <br> 2. Verificar a página que aparece. |
+| Critérios de êxito | O usuário ser redirecionado para tela de balancete. |
+| Responsável pela elaborar do caso de Teste | Vitor |
 
 <hr>
 

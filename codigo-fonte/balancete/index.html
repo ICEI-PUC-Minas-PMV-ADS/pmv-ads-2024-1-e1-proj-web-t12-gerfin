@@ -37,11 +37,14 @@
       </div>
       <div class="filtro">
         <p>Filtrar:</p>
-        <select name="mes"></select>
+        <select name="filtro" id="filtro">
+          <option value="">Todos</option>
+          <option value="income">Receita</option>
+          <option value="outcome">Despesa</option>
+        </select>
       </div>
     </nav>
     <main>
-
       <!-- modal receita -->
       <div id="modalR" class="modalR">
         <div class="modalR-content">
@@ -115,27 +118,24 @@
           <div class="modalEdt-body">
             <div class="input">
               <label for="">Nome</label>
-              <input type="text" id="nome" name="nome" required /><br /><br />
-              <label for="">Valor</label>
-              <input
-                type="text"
-                id="receitaNewValue"
-                placeholder="R$ 0,00"
-              /><br /><br />
+              <input type="text" id="nomeEdit" name="nome" />
               <label for="">Essencial</label>
-              <input
-                type="text"
-                id="essencial"
-                name="essencial"
-                required
-              /><br /><br />
+              <select name="essencial" id="essencialEdit">
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+              </select>
               <label for="">Categoria</label>
-              <input
-                type="text"
-                id="categoria"
-                name="categoria"
-                required
-              /><br /><br />
+              <select name="categoria" id="categoriaEdit">
+                <option value="Casa">Casa</option>
+                <option value="Educação">Educacão</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Lazer">Lazer e Hobbies</option>
+                <!-- <option value="Transporte">Transporte</option>
+              <option value="Vestuário">Vestuário</option> -->
+              </select>
+              <label for="">Valor</label>
+              <input type="text" id="valueEdit" placeholder="R$ 0,00" />
             </div>
             <button id="editValueBtn">Confirmar</button>
           </div>

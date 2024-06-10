@@ -222,6 +222,11 @@ let userData = {}
 let month = ''
 let monthData = {} 
 
+const monthNames = [
+  "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+  "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+];
+
 // ao selecionar mes alterar dados
 mes.addEventListener('change', (event) => {
   UpdateAllData(event.target.value)
@@ -242,16 +247,14 @@ function Initialize(){
       
   db = localStorage.getItem('db') ? JSON.parse(localStorage.getItem('db')) : banco
 
-  console.log('db', db)
-
   userData = db.users.find(user => user.email === userEmail);
   console.log('userData', userData)
 
   month = userData.data[userData.data.length - 1].month
-  console.log('month', month)
 
   monthData = userData.data.find(item => item.month === month);
   console.log('monthData', monthData)
+
 
   CreateOptions()
 
@@ -336,10 +339,16 @@ function FillData() {
 
 //cria as opções dos meses
 function CreateOptions() {
+  /* const options = document.querySelectorAll('.option');
+  options.forEach(option => option.remove())
+  const data = userData.data.sort((a, b) => {
+    return monthNames.indexOf(a) - monthNames.indexOf(b);
+  }) */
   for (let i = userData.data.length ; i != 0; i--) {
     const option = document.createElement('option');
     option.value = userData.data[i - 1].month;
     option.textContent = userData.data[i - 1].month;
+    option.classList.add('option');
     mes.appendChild(option);
   }
 }
@@ -444,31 +453,90 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Função para criar despesa
 function CriarDespesa(novoValor, name, category, essential) {
-  monthData.balance.push(
-    { 
-      id: monthData.balance.length + 1,
-      name: name,
-      value: parseFloat(novoValor).toFixed(2).replace('.', ','),
-      type: 'outcome',
-      essential: essential === 'true' ? true : false,
-      category: category,
-      date: formatDateToYYYYMMDD(new Date()), 
-    });
 
+ /*  const currentDate = new Date()
+  const currentMonth = currentDate.getMonth()
+  
+  // Obter o nome do mês atual
+  const currentMonthName = monthNames[currentMonth];
+
+  if ( currentMonthName !== monthData.month) {
+    userData.data.push(
+      { 
+        id: generateUUID(),
+        month: currentMonthName,
+        balance: [
+          { 
+            id: monthData.balance.length + 1,
+            name: name,
+            value: parseFloat(novoValor).toFixed(2).replace('.', ','),
+            type: 'outcome',
+            essential: essential === 'true' ? true : false,
+            category: category,
+            date: formatDateToYYYYMMDD(new Date()), 
+          }
+        ],
+        savings: '0'
+      }
+    )
+    CreateOptions()
+
+  } else { */
+    userData.data[0].balance.push(
+      { 
+        id: monthData.balance.length + 1,
+        name: name,
+        value: parseFloat(novoValor).toFixed(2).replace('.', ','),
+        type: 'outcome',
+        essential: essential === 'true' ? true : false,
+        category: category,
+        date: formatDateToYYYYMMDD(new Date()), 
+      }
+    )
+/*   } */
+
+  
   localStorage.setItem('db', JSON.stringify(db));
 }
 
 // Função para criar receita
 function CriarReceita(novoValor, name) {
-  monthData.balance.push(
-    { 
-      id: monthData.balance.length + 1,
-      name: name, 
-      value: parseFloat(novoValor).toFixed(2).replace('.', ','), 
-      type: 'income', 
-      date: formatDateToYYYYMMDD(new Date()), 
-    });
-  localStorage.setItem('db', JSON.stringify(db));
+ /*  const currentDate = new Date()
+  const currentMonth = currentDate.getMonth()
+  
+  // Obter o nome do mês atual
+  const currentMonthName = monthNames[currentMonth];
+
+  if ( currentMonthName !== monthData.month) {
+    userData.data.push(
+      { 
+        id: generateUUID(),
+        month: currentMonthName,
+        balance: [
+          { 
+            id: monthData.balance.length + 1,
+            name: name, 
+            value: parseFloat(novoValor).toFixed(2).replace('.', ','), 
+            type: 'income', 
+            date: formatDateToYYYYMMDD(new Date()), 
+          }
+        ],
+        savings: '0'
+      }
+    )
+    CreateOptions()
+
+  } else { */
+    monthData.balance.push(
+      { 
+        id: monthData.balance.length + 1,
+        name: name, 
+        value: parseFloat(novoValor).toFixed(2).replace('.', ','), 
+        type: 'income', 
+        date: formatDateToYYYYMMDD(new Date()), 
+      });
+    localStorage.setItem('db', JSON.stringify(db));
+ /*  } */
 }
 
 // Função para alterar o valor de savings
@@ -488,7 +556,6 @@ function LineGraphData() {
   let accumulated = parseFloat(monthData.savings )
 
   let values = Object.keys(dailyBalances).map(date => {
-    console.log(dailyBalances[date])
     accumulated += parseFloat(dailyBalances[date].income) 
     accumulated -= parseFloat(dailyBalances[date].outcome)
     return accumulated

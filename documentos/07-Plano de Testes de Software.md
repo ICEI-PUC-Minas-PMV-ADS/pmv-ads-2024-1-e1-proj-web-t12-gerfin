@@ -95,12 +95,22 @@ Abaixo estão os cenários de testes selecionados para avaliação do sistema Le
 
 |Caso de Teste    | CT-10 - Visualizar atualização do gráfico de balancete|
 |:---|:---|
-| Requisitos Associados | RF-08 - A aplicação deve gerar um gráfico de acompanhamento financeiro. <br> RF-07 - A aplicação deve permitir ao usuário classificar o tipo de gasto (essencial ou não essencial). <br> RF-10	A aplicação deve exibir um balancete.  |
+| Requisitos Associados | RF-08 - A aplicação deve gerar um gráfico de acompanhamento financeiro. <br> RF-07 - A aplicação deve permitir ao usuário classificar o tipo de gasto (essencial ou não essencial). <br> RF-08	A aplicação deve gerar um gráfico de acompanhamento financeiro.  |
 | Objetivo do Teste | Verificar se o gráfico de balancete esta funcionando como deveria. <br> Verificar se o relatório de despesas por categoria é atualizado corretamente ao clicar no criar despesas e se mostra a porcentagem de cada categoria.|
 | Passos | 1. Clicar em "Adicionar receita", "Adicionar despesa" ou "Alterar poupança". <br> 2. Fechar o modal <br> 3. Vizualizar a página do painel. <br> 4. Verificar a mudanaça dos indicadores.|
 | Critérios de êxito | O modal se fechar e os gráficos atualizar com os valores adicionados. <br> O gráfico de balancete exibir e atualizar a porcentagem dos valores inseridos pelo usuário. |
 | Responsável pela elaborar do caso de Teste | Eric|
 
+<hr>
+
+|Caso de Teste    | CT-11 - Verificar redirecionamento para tela de balanço|
+|:---|:---|
+| Requisitos Associados | RF-10 A aplicação deve exibir um balancete.  |
+| Objetivo do Teste | Verificar se o usuário consegue ir para a tela de balancete.|
+| Passos | 1. Clicar em "Ver detalhes" ou "Balanço" <br> 2. Verificar a página que aparece. |
+| Critérios de êxito | O usuário ser redirecionado para tela de balancete. | Vitor |
+
+<hr>
 
 <!-- # Plano de Testes de Software
 

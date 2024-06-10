@@ -198,17 +198,18 @@ document.getElementById('LoginForm').addEventListener('submit', function(e) {
   const message = document.getElementById('message');
 
 
-    const user = data.users.find(u => u.email === email && u.password === password);
-    if (user) {
-      localStorage.setItem('user', JSON.stringify(user.email));
-      message.textContent = 'Sucesso ao logar!';
-      message.style.color = 'green';
-      setTimeout(() => {
-        window.location.href = '../painel/index.html';
-      }, 1000);
-    } else {
-      message.textContent = 'Email ou senha incorretos.';
-      message.style.color = 'red';
-      throw new Error('Email ou senha incorretos');
-    }
+  const user = data.users.find(u => u.email === email && u.password === password);
+  if (user) {
+    localStorage.setItem('user', JSON.stringify(user.email));
+    message.textContent = 'Sucesso ao logar!';
+    message.style.color = 'green';
+    setTimeout(() => {
+      window.location.href = '../painel/index.html';
+    }, 1000);
+  } else {
+    message.textContent = 'Email ou senha incorretos.';
+    message.style.color = 'red';
+    throw new Error('Email ou senha incorretos');
+  }
+  
 });

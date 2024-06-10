@@ -31,7 +31,7 @@ Artefatos da funcionalidade
 
 ### Estrutura de Dados
 
-●[cadastre-se.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/cadastro/index.html)
+●[cadastrar.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/cadastro/index.html)
 
 
 ### Instruções de acesso
@@ -53,8 +53,6 @@ Exemplo da tela de login:
  <figurecaption> Figura 2- Página de login </figurecaption>
 </figure>
 <hr>
-
-
 
 #### Requisito atendido
 
@@ -81,21 +79,20 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 
 1.	Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/inicial/
 2.	Ao clicar em “Comece ja” no canto superior direito da tela, terá acesso a página de login.
-
 <hr>
 
 
 ### Inserir valor de receita e despesa  (RF-003)
 
-Responsável: Estefany
+Responsável: Erick
 
 . As estruturas de dados foram baseadas em HTML, CSS e JS.
 
-Exemplo da tela de inclusão de valor recebido e pago :
+Exemplo da tela de inclusão de valor receita :
 
 <figure>
  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/23849261-de7c-43f9-b979-f1610c56fb5d">
-  <figurecaption> Figura 3 - Página de inclusão de valores </figurecaption>
+  <figurecaption> Figura 3 - Página de inclusão de valores de receita  </figurecaption>
 </figure>
 <hr>
 
@@ -115,34 +112,37 @@ RF-03	O site deve oferecer uma funcionalidade de inclusão de receita e depesas 
 
 #### Estrutura de Dados
 
-●[paginaLeevi.html]( https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
+●[inclusaoreceita.html]( https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
 
 
 #### Instruções de acesso
 
 1.	Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/login/index.html
 2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de adicionar receitas e despesas
-3.	Ao clicar em "Adicionar Receita \ Adicionar Despesa" abrira um modal para incluir os valores.
-
-
+3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
+4.	Clique em "Adicionar receita\Adicionar despesa ", abrira um modal para incluir os valores.
+5.  Insira no campo "Nome" o nome da receita a ser inserida.
+6.  Insira no campo "Valor" op valor a ser adicionado,
+7.  Click em "Criar" para o valor ser atualizado na tekla de receita.
 <hr>
 
 ## Editar valor de receita e despesa (RF-04)
 
-Responsável:
+Responsável: Estefany
 
-Na tela de balanço e possivel inserir valores de despesa e rteceita. As estruturas de dados foram baseadas em HTML, CSS e JS.
+Na tela de balanço e possivel inserir valores de despesa e receita. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de Adicionar Receita:
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a3507a9-958e-4b25-a03a-0c4fd7d68a8a">
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/987f38d1-53ae-438d-af4a-308793fc62d9">
 <figurecaption> Figura 4 - Adicionando receita</figurecaption>
 </figure>
 <hr>
 
 #### Requisitos atendidos
  
-RF-04	O site deve permitir ao usuário fazer a inclusão dos valores da receita e despesa.
+RF-04	O site deve permitir ao usuário fazer a exclusão dos valores da receita e despesa.
 
 #### Artefatos da funcionalidade
 
@@ -155,17 +155,17 @@ RF-04	O site deve permitir ao usuário fazer a inclusão dos valores da receita 
 
 #### Estrutura de Dados
 
-●[receita.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
+●[exclusão.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/painel/index.html)
 
 
 #### Instruções de acesso
+
 1.	Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/inicial/
 2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de login.
 3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
-4.	Clique em "Adicionar receita ", abrira um modal para incluir os valores.
-5.  Insira no campo "Nome" o nome da receita a ser inserida.
-6.  Insira no campo "Valor" op valor a ser adicionado,
-7.  Click em "Criar" para o valor ser atualizado na tekla de receita.
+4.	Clique em "Balanço", abrira a tela de balanço.
+5.  Clicar no botão deletar para excluir algum valor
+6.  Confirmar a exclusão no botão deletar no modal que surgira
 
 <hr>
  
@@ -196,7 +196,7 @@ RF- 10	O site deve permitir mostrar as dicas financeiras
 
 #### Estrutura de Dados
 
-●[Dicas.html])
+●[Dicas.html]()
 
 
 #### Instruções de acesso
@@ -222,7 +222,7 @@ Apos login usuario poderá filtrar os dados por mês, e mostrar o balancete. As 
 
 #### Requisitos atendidos
  
-RF- 10	O site deve permitir mostrar o balancete e deletar receita \ despesa
+RF- 10	O site deve permitir mostrar o balancete e permitir incluir e deletra valores
 
 #### Artefatos da funcionalidade
 
@@ -242,6 +242,7 @@ RF- 10	O site deve permitir mostrar o balancete e deletar receita \ despesa
 2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de login.
 3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
 4.	Clique em "Balanço" para visualizar a tela de balancete 
+5.  
 
 <hr>
 

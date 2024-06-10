@@ -86,9 +86,9 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 <hr>
 
 
-### Inserir valor recebido e pago (RF-003)
+### Inserir valor de receita e despesa  (RF-003)
 
-Responsável: Erick
+Responsável: Estefany
 
 . As estruturas de dados foram baseadas em HTML, CSS e JS.
 
@@ -130,13 +130,13 @@ RF-03	O site deve oferecer uma funcionalidade de inclusão de receita e depesas 
 
 ## Editar valor de receita e despesa (RF-04)
 
-Responsável: Estefany
+Responsável:
 
 Na tela de balanço e possivel inserir valores de despesa e rteceita. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 Exemplo da tela de Adicionar Receita:
 
-<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/987f38d1-53ae-438d-af4a-308793fc62d9">
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a3507a9-958e-4b25-a03a-0c4fd7d68a8a">
 <figurecaption> Figura 3 - Adicionando receita</figurecaption>
 </figure>
 <hr>
@@ -170,3 +170,79 @@ RF-04	O site deve permitir ao usuário fazer a inclusão dos valores da receita 
 
 <hr>
  
+### A aplicação deve ter dicas de economia. (RF- 09)
+
+Responsável:  Isaac
+
+Apos login usuario poderá ter acesso a página de dicas. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/aec00edb-d53b-4a7d-903b-676396c08c24">
+ <figurecaption> Figura 10 - Pop-ups de dicas financeiras </figurecaption>
+</figure>
+<hr>
+
+#### Requisitos atendidos
+ 
+RF- 10	O site deve permitir mostrar as dicas financeiras 
+
+#### Artefatos da funcionalidade
+
+
+●	index.html 
+
+●	style.css
+
+●	script.js
+
+#### Estrutura de Dados
+
+●[Dicas.html])
+
+
+#### Instruções de acesso
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/inicial/
+2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de login.
+3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
+4.	
+
+
+<hr>
+
+### A aplicação deve exibir um balancete. (RF- 10)
+
+Responsável: 
+
+Apos login usuario poderá filtrar os dados por mês, e mostrar o balancete. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+
+<figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/1ba13f63-383d-462f-ba84-a74e748815bc">
+ <figurecaption> Figura 4 - Página de balanço </figurecaption>
+</figure>
+<hr>
+
+#### Requisitos atendidos
+ 
+RF- 10	O site deve permitir mostrar o balancete e deletar receita \ despesa
+
+#### Artefatos da funcionalidade
+
+●	index.html 
+
+●	style.css
+
+●	script.js
+
+#### Estrutura de Dados
+
+●[balancete.html](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/balancete/index.html)
+
+
+#### Instruções de acesso
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/inicial/
+2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de login.
+3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
+4.	Clique em "Balanço" para visualizar a tela de balancete 
+
+<hr>
+

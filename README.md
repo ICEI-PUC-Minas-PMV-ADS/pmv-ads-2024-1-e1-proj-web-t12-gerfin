@@ -37,7 +37,7 @@ O objetivo geral deste projeto é a aplicação web prática de educação finan
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+A aplicação em HTML/CSS/JS é um projeto que pode ser utilizado tanto em servidores como em navegadores web. Clique <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/inicial/index.html" > aqui </a> para acessá-lo.
 
 # Código-Fonte
 

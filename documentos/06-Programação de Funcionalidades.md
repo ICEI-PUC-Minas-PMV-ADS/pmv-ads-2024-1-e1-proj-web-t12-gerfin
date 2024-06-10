@@ -242,7 +242,8 @@ RF- 10	O site deve permitir mostrar o balancete e permitir incluir e deletra val
 2.	Ao clicar em “Login” no canto superior direito da tela, terá acesso a página de login.
 3.	Informe seu e-mail e senha cadastrados e terá acesso à página de Perfil.
 4.	Clique em "Balanço" para visualizar a tela de balancete 
-5.  
+5.  Ao clicar em "Deletar" ira aparecer um modal para confirmar se usuario realmente deseja deletar o valor
+6.  Ao clicar em "Receita" e possil incluir mais uma receita 
 
 <hr>
 

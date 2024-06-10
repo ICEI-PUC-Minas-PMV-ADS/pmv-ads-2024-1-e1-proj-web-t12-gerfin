@@ -50,10 +50,11 @@ O acesso a tela de login poderá ser feito através do menu “Login”, no cant
 
 Exemplo da tela de login: 
 
-
-
-![pagina-login](https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t12-gerfin/codigo-fonte/login/index.html)
-
+<figure>
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/a71c2e12-39dd-4f04-b62c-e82bbe3f68ef">
+ <figurecaption> Figura 2- Página de login </figurecaption>
+</figure>
+<hr>
 
 
 
@@ -96,7 +97,7 @@ Exemplo da tela de inclusão de valor recebido e pago :
 
 <figure>
  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/23849261-de7c-43f9-b979-f1610c56fb5d">
-  <figurecaption> Figura 2 - Página de inclusão de valores </figurecaption>
+  <figurecaption> Figura 3 - Página de inclusão de valores </figurecaption>
 </figure>
 <hr>
 
@@ -137,7 +138,7 @@ Na tela de balanço e possivel inserir valores de despesa e rteceita. As estrutu
 Exemplo da tela de Adicionar Receita:
 
 <figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/0a3507a9-958e-4b25-a03a-0c4fd7d68a8a">
-<figurecaption> Figura 3 - Adicionando receita</figurecaption>
+<figurecaption> Figura 4 - Adicionando receita</figurecaption>
 </figure>
 <hr>
 
@@ -178,7 +179,7 @@ Apos login usuario poderá ter acesso a página de dicas. As estruturas de dados
 
 
 <figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/aec00edb-d53b-4a7d-903b-676396c08c24">
- <figurecaption> Figura 10 - Pop-ups de dicas financeiras </figurecaption>
+ <figurecaption> Figura 5 - Pop-ups de dicas financeiras </figurecaption>
 </figure>
 <hr>
 
@@ -217,7 +218,7 @@ Apos login usuario poderá filtrar os dados por mês, e mostrar o balancete. As 
 
 
 <figure> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin/assets/157512224/1ba13f63-383d-462f-ba84-a74e748815bc">
- <figurecaption> Figura 4 - Página de balanço </figurecaption>
+ <figurecaption> Figura 6 - Página de balanço </figurecaption>
 </figure>
 <hr>
 

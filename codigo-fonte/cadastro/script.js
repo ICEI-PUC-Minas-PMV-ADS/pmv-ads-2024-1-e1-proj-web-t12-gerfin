@@ -25,7 +25,7 @@ const db = {
               "type": "outcome",
               "essential": true,
               "category": "Casa",
-              "date": "2022-03-01"
+              "date": "2022-03-02"
             },
             {
               "id": 3,
@@ -34,7 +34,7 @@ const db = {
               "type": "outcome",
               "essential": true,
               "category": "Educação",
-              "date": "2022-03-02"
+              "date": "2022-03-03"
             },
             {
               "id": 4,
@@ -43,7 +43,7 @@ const db = {
               "type": "outcome",
               "essential": false,
               "category": "Lazer",
-              "date": "2022-03-02"
+              "date": "2022-03-04"
             }
           ]
         },
@@ -223,39 +223,12 @@ function generateUUID() { // Public Domain/MIT
   });
 }
 
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Impede o envio do formulário
-
-  console.log('Cadastrando...');
-
-  console.log(db)
-
-  // Captura os dados dos inputs
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-  const confirmPassword = document.getElementById('confirmPassword').value;
-  const message = document.getElementById('message');
-
-  // Verifica se as senhas coincidem
-  if (password !== confirmPassword) {
-    message.textContent = 'As senhas não coincidem. Por favor, tente novamente.';
-    message.style.color = 'red';
-    return;
-  }
-
-  if (db.users.find(user => user.email === email)) {
-    message.textContent = 'Email ja existe. Por favor, tente novamente.';
-    message.style.color = 'red';
-    return;
-  }
-
   // Cria uma nova instância de User
   const newUser = {
     "id": generateUUID(),
-    "name": name,
+    "nome": nome,
     "email": email,
-    "password": password,
+    "senha": senha,
     "data": []
   };
 
@@ -321,4 +294,3 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     console.error('Error:', error);
     alert('Erro ao cadastrar');
   }); */
-})  

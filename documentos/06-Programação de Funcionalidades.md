@@ -4,7 +4,7 @@
 
 ### Tela de Cadastro (RF-01)
 
-Responsável: 
+Responsável: Luiz Xavier
 
 O acesso a tela de cadastro poderá ser feito através da opção de menu “Cadastrar”. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
@@ -42,7 +42,7 @@ Ao clicar em “Começe já” no canto superior direito da tela inicila, terá 
 
 ### Tela de Login (RF-02)
 
-Responsável: 
+Responsável: Eric
 
 O acesso a tela de login poderá ser feito através do menu “Login”, no canto diretitoda tela inicial. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
@@ -84,7 +84,7 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 
 ### Inserir valor de receita e despesa  (RF-003)
 
-Responsável: Erick
+Responsável: Eric
 
 . As estruturas de dados foram baseadas em HTML, CSS e JS.
 
@@ -210,7 +210,7 @@ RF- 10	O site deve permitir mostrar as dicas financeiras
 
 ### A aplicação deve exibir um balancete. (RF- 10)
 
-Responsável: 
+Responsável: Vitor Ramos
 
 Apos login usuario poderá filtrar os dados por mês, e mostrar o balancete. As estruturas de dados foram baseadas em HTML, CSS e JS.
 

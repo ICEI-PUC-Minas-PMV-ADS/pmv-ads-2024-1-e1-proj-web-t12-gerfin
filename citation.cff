@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title:
+authors:
+  - family-names:Esteves Martins 
+    given-names: Eric 
+  - family-names: Bianca de Paula
+    given-names: Estefany
+  - family-names: Samuel Andrade Araújo
+    given-names: Isaac 
+  - family-names: Paulo Fernandes Xavier
+    given-names: Luiz 
+  - family-names: Manoel Borges Ramos
+    given-names: Vitor  
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names:Felipe Alves de Oliveira 
+    given-names: Pedro 
+  keywords:
+  - Sistemas 
+  - Gerenciamento 
+  - Finanças
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin.git
+version: 1.0.0
+date-released: 2024-06-22

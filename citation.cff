@@ -1,5 +1,5 @@
 message: Please cite this software using these metadata.
-title:
+title: Leevi
 authors:
   - family-names:Esteves Martins 
     given-names: Eric 
@@ -19,6 +19,7 @@ authors:
   - Sistemas 
   - Gerenciamento 
   - Finanças
+  - Economia
 repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t12-gerfin.git
 version: 1.0.0
 date-released: 2024-06-22
